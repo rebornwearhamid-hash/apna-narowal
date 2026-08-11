@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narowal Weather Today 2026 – Live Forecast, Temperature & Rain</title>
+<meta name="description" content="Narowal weather today 2026. Live temperature, humidity, wind speed, 7-day forecast and hourly weather for Narowal, Shakargarh and Zafarwal. موسم نارووال آج۔">
+<meta name="keywords" content="narowal weather today, weather narowal, موسم نارووال, narowal temperature today, narowal weather forecast, weather shakargarh, weather zafarwal, narowal rain today 2026">
+<link rel="canonical" href="https://apnanarowal.pk/narowal-weather">
+<meta property="og:title" content="Narowal Weather Today 2026 – Live Temperature & 7-Day Forecast">
+<meta property="og:description" content="Live weather for Narowal district. Current temperature, humidity, wind, UV index and 7-day forecast.">
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Narowal">
+<meta name="geo.position" content="32.1000;74.8747">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Narowal Weather Today 2026","description":"Live weather forecast for Narowal district Punjab Pakistan including temperature humidity wind and 7-day forecast","url":"https://apnanarowal.pk/narowal-weather","dateModified":"2026-07-25"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is the weather in Narowal today?","acceptedAnswer":{"@type":"Answer","text":"Current weather for Narowal is shown in the live widget above, updated every 30 minutes from Open-Meteo API. Narowal experiences hot summers (40-45°C in June-August), mild winters (5-15°C in December-January), and a monsoon season from July to September with heavy rainfall."}},
+{"@type":"Question","name":"What is the hottest month in Narowal?","acceptedAnswer":{"@type":"Answer","text":"June and July are the hottest months in Narowal with temperatures regularly reaching 42-46°C. The monsoon season brings relief from late July through September with rain and slightly cooler temperatures."}},
+{"@type":"Question","name":"Does it snow in Narowal?","acceptedAnswer":{"@type":"Answer","text":"Narowal does not get snowfall as it is located in the plains of Punjab at 238 metres elevation. Winters are cold with minimum temperatures of 3-8°C in December and January but snowfall does not occur. Frost may form on very cold nights in January."}},
+{"@type":"Question","name":"What is the best time to visit Narowal?","acceptedAnswer":{"@type":"Answer","text":"The best time to visit Narowal is October to March when temperatures are pleasant ranging from 15-25°C. The Kartarpur Corridor is most comfortable to visit in winter. Avoid June-August due to extreme heat of 40-45°C."}}
+]}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Segoe UI",Arial,sans-serif;background:#0a1628;color:#e8e8e8;line-height:1.65;font-size:15px;}
+a{color:#60a5fa;text-decoration:none;}
+.topbar{background:rgba(0,0,0,.3);color:rgba(255,255,255,.6);font-size:.72rem;padding:6px 20px;border-bottom:1px solid rgba(255,255,255,.08);}
+.topbar-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;}
+.topbar a{color:#f0c060;}
+nav{background:rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.1);position:sticky;top:0;z-index:200;backdrop-filter:blur(12px);}
+.nav-inner{max-width:1200px;margin:auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:62px;}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-icon{width:38px;height:38px;background:#1a6b3c;border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.3rem;font-weight:700;}
+.logo-name{font-size:1.2rem;font-weight:700;color:white;}
+.logo-sub{display:block;font-size:.6rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;}
+.nav-links{display:flex;list-style:none;gap:4px;}
+.nav-links a{padding:6px 12px;border-radius:7px;font-size:.82rem;font-weight:500;color:rgba(255,255,255,.75);transition:all .2s;}
+.nav-links a:hover,.nav-links a.active{background:rgba(255,255,255,.12);color:white;}
+@media(max-width:700px){.nav-links{display:none;}}
+.bc{background:rgba(255,255,255,.05);padding:10px 20px;border-bottom:1px solid rgba(255,255,255,.08);font-size:.76rem;color:rgba(255,255,255,.5);}
+.bc a{color:#60a5fa;font-weight:500;}.bc span{margin:0 6px;}
+
+/* HERO WEATHER CARD */
+.hero-wrap{max-width:1200px;margin:0 auto;padding:28px 20px 0;}
+.city-tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
+.city-tab{padding:8px 20px;border-radius:999px;font-size:.82rem;font-weight:600;cursor:pointer;border:1.5px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);transition:all .2s;}
+.city-tab.active,.city-tab:hover{background:#1a6b3c;border-color:#1a6b3c;color:white;}
+
+.weather-hero{background:linear-gradient(135deg,rgba(30,58,138,.8),rgba(15,23,42,.9));border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:28px;margin-bottom:20px;position:relative;overflow:hidden;}
+.wh-bg{position:absolute;inset:0;pointer-events:none;opacity:.08;font-size:12rem;display:flex;align-items:center;justify-content:flex-end;padding-right:20px;line-height:1;}
+.wh-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:24px;}
+.wh-location{font-size:.8rem;color:rgba(255,255,255,.6);margin-bottom:4px;display:flex;align-items:center;gap:6px;}
+.wh-city{font-size:1.8rem;font-weight:800;color:white;margin-bottom:4px;}
+.wh-updated{font-size:.7rem;color:rgba(255,255,255,.45);font-family:monospace;}
+.wh-temp-block{text-align:right;}
+.wh-temp{font-size:4.5rem;font-weight:900;color:white;line-height:1;}
+.wh-unit{font-size:1.5rem;color:rgba(255,255,255,.6);}
+.wh-feels{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:4px;}
+.wh-desc{font-size:1.1rem;font-weight:600;color:#93c5fd;margin-bottom:18px;}
+.wh-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;}
+.wh-stat{background:rgba(255,255,255,.07);border-radius:10px;padding:12px;text-align:center;}
+.ws-icon{font-size:1.2rem;margin-bottom:4px;}
+.ws-label{font-size:.65rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;}
+.ws-val{font-size:.95rem;font-weight:700;color:white;}
+
+/* HOURLY */
+.section-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;margin-bottom:16px;}
+.sc-title{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.5);margin-bottom:14px;}
+.hourly-scroll{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin;}
+.hour-card{flex-shrink:0;background:rgba(255,255,255,.07);border-radius:12px;padding:12px 14px;text-align:center;min-width:72px;}
+.hour-card.now{background:#1e3a8a;border:1px solid rgba(96,165,250,.3);}
+.hc-time{font-size:.68rem;color:rgba(255,255,255,.55);margin-bottom:5px;}
+.hc-icon{font-size:1.3rem;margin-bottom:5px;}
+.hc-temp{font-size:.9rem;font-weight:700;color:white;}
+.hc-rain{font-size:.65rem;color:#60a5fa;margin-top:3px;}
+
+/* 7-DAY */
+.day-row{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06);gap:10px;}
+.day-row:last-child{border-bottom:none;}
+.dr-day{font-size:.85rem;font-weight:600;color:white;width:90px;flex-shrink:0;}
+.dr-icon{font-size:1.3rem;flex-shrink:0;}
+.dr-desc{font-size:.75rem;color:rgba(255,255,255,.5);flex:1;padding:0 8px;}
+.dr-rain{font-size:.72rem;color:#60a5fa;width:40px;text-align:center;flex-shrink:0;}
+.dr-temps{display:flex;gap:8px;align-items:center;flex-shrink:0;}
+.dr-max{font-size:.9rem;font-weight:700;color:#fbbf24;}
+.dr-min{font-size:.82rem;color:rgba(255,255,255,.45);}
+
+/* UV + WIND */
+.uv-bar-wrap{margin-top:8px;}
+.uv-bar{height:8px;border-radius:999px;background:linear-gradient(to right,#22c55e,#eab308,#ef4444,#7c3aed);position:relative;margin-bottom:6px;}
+.uv-marker{position:absolute;top:-4px;width:16px;height:16px;background:white;border-radius:50%;border:2px solid #1e3a8a;transform:translateX(-50%);transition:left .5s;}
+.uv-labels{display:flex;justify-content:space-between;font-size:.65rem;color:rgba(255,255,255,.4);}
+
+/* CLIMATE TABLE */
+.climate-table{width:100%;border-collapse:collapse;font-size:.8rem;}
+.climate-table th{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);padding:8px 10px;text-align:left;font-weight:600;font-size:.7rem;}
+.climate-table td{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.8);}
+.climate-table tr:last-child td{border-bottom:none;}
+.temp-hot{color:#fbbf24;font-weight:700;}
+.temp-cold{color:#60a5fa;font-weight:700;}
+
+/* BODY */
+.page-body{max-width:1200px;margin:0 auto;padding:0 20px 40px;}
+.two-col{display:grid;grid-template-columns:1fr 300px;gap:20px;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+
+.info-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px;margin-bottom:16px;}
+.ic-title{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.45);margin-bottom:12px;}
+h2.st{font-size:clamp(1.3rem,3vw,1.8rem);color:white;margin-bottom:8px;}
+h2.st em{color:#60a5fa;font-style:normal;}
+h3.sh{font-size:.95rem;color:white;margin:18px 0 8px;font-weight:700;}
+p.bt{font-size:.85rem;color:rgba(255,255,255,.65);line-height:1.82;margin-bottom:12px;}
+
+/* FAQ */
+.faq-item{border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;margin-bottom:8px;}
+.faq-q{padding:12px 16px;background:rgba(255,255,255,.04);font-weight:600;font-size:.84rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:white;}
+.faq-q:hover{background:rgba(255,255,255,.08);}
+.faq-arr{font-size:.65rem;transition:transform .3s;color:#60a5fa;}
+.faq-q.open .faq-arr{transform:rotate(180deg);}
+.faq-a{padding:0 16px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .2s;font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.75;background:rgba(255,255,255,.02);}
+.faq-a.open{max-height:250px;padding:12px 16px 14px;}
+
+.sb-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px;margin-bottom:14px;}
+.sb-title{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.07);}
+.sb-list{list-style:none;}
+.sb-list li{padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.8rem;display:flex;justify-content:space-between;align-items:center;gap:4px;flex-wrap:wrap;}
+.sb-list li:last-child{border-bottom:none;}
+.il-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:7px;margin-top:12px;}
+.il-link{display:block;padding:7px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;font-size:.74rem;font-weight:600;color:rgba(255,255,255,.75);transition:all .2s;}
+.il-link:hover{background:#1a6b3c;color:white;border-color:#1a6b3c;}
+
+.loading{color:rgba(255,255,255,.4);font-size:.85rem;text-align:center;padding:30px;animation:pulse 1.5s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+@keyframes spin{to{transform:rotate(360deg);}}
+.spinner{width:20px;height:20px;border:2px solid rgba(255,255,255,.2);border-top-color:white;border-radius:50%;animation:spin .8s linear infinite;display:inline-block;margin-right:8px;vertical-align:middle;}
+
+footer{background:rgba(0,0,0,.4);color:rgba(255,255,255,.4);padding:30px 20px 16px;border-top:1px solid rgba(255,255,255,.07);}
+.fg{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px;margin-bottom:18px;}
+@media(max-width:768px){.fg{grid-template-columns:1fr 1fr;}}
+.fb{font-size:.95rem;color:white;margin-bottom:6px;display:block;font-weight:700;}
+.fg>div>p{font-size:.74rem;line-height:1.7;max-width:200px;color:rgba(255,255,255,.35);}
+.fc h5{font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:7px;}
+.fc ul{list-style:none;}.fc li{margin-bottom:5px;}
+.fc a{font-size:.74rem;color:rgba(255,255,255,.3);transition:color .2s;}.fc a:hover{color:#f0c060;}
+.fbot{max-width:1200px;margin:auto;padding-top:10px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:.68rem;}
+.wa{position:fixed;bottom:22px;right:22px;z-index:999;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:white;box-shadow:0 4px 16px rgba(37,211,102,.4);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>📍 Narowal District, Punjab, Pakistan</span>
+    <span id="tb-time">Loading time...</span>
+  </div>
+</div>
+
+<nav><div class="nav-inner">
+  <a href="index.html" class="logo">
+    <div class="logo-icon">ن</div>
+    <div><span class="logo-name">Apna Narowal</span><span class="logo-sub">اپنا نارووال</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gold-rate-narowal.html">Gold Rate</a></li>
+    <li><a href="petrol-price-narowal.html">Petrol</a></li>
+    <li><a href="prayer-times-narowal.html">Prayer Times</a></li>
+    <li><a href="narowal-weather.html" class="active">Weather</a></li>
+    <li><a href="load-shedding-narowal.html">Load Shedding</a></li>
+  </ul>
+</div></nav>
+
+<div class="bc">
+  <div style="max-width:1200px;margin:auto;">
+    <a href="index.html">Home</a><span>›</span>Narowal Weather Today
+  </div>
+</div>
+
+<!-- MAIN WEATHER APP -->
+<div class="hero-wrap">
+
+  <!-- CITY TABS -->
+  <div class="city-tabs">
+    <button class="city-tab active" onclick="loadCity('narowal')">📍 Narowal</button>
+    <button class="city-tab" onclick="loadCity('shakargarh')">🏙️ Shakargarh</button>
+    <button class="city-tab" onclick="loadCity('zafarwal')">🏘️ Zafarwal</button>
+  </div>
+
+  <!-- CURRENT WEATHER HERO -->
+  <div class="weather-hero" id="weather-hero">
+    <div class="wh-bg" id="hero-bg">☀️</div>
+    <div class="wh-top">
+      <div>
+        <div class="wh-location">📍 <span id="city-name">Narowal</span>, Punjab, Pakistan</div>
+        <div class="wh-city" id="city-label">Narowal</div>
+        <div class="wh-updated" id="updated-time">Fetching live data...</div>
+      </div>
+      <div class="wh-temp-block">
+        <div class="wh-temp" id="curr-temp"><span class="spinner"></span></div>
+        <div class="wh-feels" id="feels-like"></div>
+      </div>
+    </div>
+    <div class="wh-desc" id="weather-desc">Loading weather...</div>
+    <div class="wh-stats">
+      <div class="wh-stat"><div class="ws-icon">💧</div><div class="ws-label">Humidity</div><div class="ws-val" id="humidity">—</div></div>
+      <div class="wh-stat"><div class="ws-icon">💨</div><div class="ws-label">Wind</div><div class="ws-val" id="wind">—</div></div>
+      <div class="wh-stat"><div class="ws-icon">🌧️</div><div class="ws-label">Rain Chance</div><div class="ws-val" id="rain-chance">—</div></div>
+      <div class="wh-stat"><div class="ws-icon">☀️</div><div class="ws-label">UV Index</div><div class="ws-val" id="uv-index">—</div></div>
+      <div class="wh-stat"><div class="ws-icon">👁️</div><div class="ws-label">Visibility</div><div class="ws-val" id="visibility">—</div></div>
+      <div class="wh-stat"><div class="ws-icon">🌡️</div><div class="ws-label">Min / Max</div><div class="ws-val" id="min-max">—</div></div>
+    </div>
+  </div>
+
+  <!-- HOURLY -->
+  <div class="section-card">
+    <div class="sc-title">⏰ Hourly Forecast — Today</div>
+    <div class="hourly-scroll" id="hourly-scroll">
+      <div class="loading">Loading hourly forecast...</div>
+    </div>
+  </div>
+
+  <!-- 7-DAY FORECAST -->
+  <div class="section-card">
+    <div class="sc-title">📅 7-Day Forecast</div>
+    <div id="forecast-7day"><div class="loading">Loading 7-day forecast...</div></div>
+  </div>
+
+  <!-- UV INDEX BAR -->
+  <div class="section-card">
+    <div class="sc-title">☀️ UV Index</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      <span style="font-size:1.4rem;font-weight:800;color:white;" id="uv-val">—</span>
+      <span style="font-size:.85rem;color:rgba(255,255,255,.6);" id="uv-label">Loading...</span>
+    </div>
+    <div class="uv-bar-wrap">
+      <div class="uv-bar"><div class="uv-marker" id="uv-marker" style="left:0%;"></div></div>
+      <div class="uv-labels"><span>Low</span><span>Moderate</span><span>High</span><span>Very High</span><span>Extreme</span></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PAGE BODY -->
+<div class="page-body" style="margin-top:24px;">
+  <div class="two-col">
+    <div>
+
+      <h2 class="st">Narowal <em>Weather</em> Guide — All Seasons</h2>
+
+      <h3 class="sh">🌡️ Narowal Climate — Month by Month</h3>
+      <div style="overflow-x:auto;margin-bottom:16px;">
+        <table class="climate-table">
+          <thead><tr><th>Month</th><th>Max °C</th><th>Min °C</th><th>Rain (mm)</th><th>Season</th></tr></thead>
+          <tbody>
+            <tr><td><strong>January</strong></td><td class="temp-cold">17°C</td><td class="temp-cold">4°C</td><td>30mm</td><td>❄️ Cold winter</td></tr>
+            <tr><td><strong>February</strong></td><td>20°C</td><td>7°C</td><td>40mm</td><td>❄️ Late winter</td></tr>
+            <tr><td><strong>March</strong></td><td>26°C</td><td>13°C</td><td>35mm</td><td>🌸 Spring</td></tr>
+            <tr><td><strong>April</strong></td><td>33°C</td><td>19°C</td><td>20mm</td><td>🌸 Warm spring</td></tr>
+            <tr><td><strong>May</strong></td><td>39°C</td><td>25°C</td><td>15mm</td><td>🔥 Pre-summer</td></tr>
+            <tr><td><strong>June</strong></td><td class="temp-hot">43°C</td><td>29°C</td><td>20mm</td><td>🔥 Peak heat</td></tr>
+            <tr><td><strong>July</strong></td><td class="temp-hot">40°C</td><td>28°C</td><td>130mm</td><td>🌧️ Monsoon</td></tr>
+            <tr><td><strong>August</strong></td><td>38°C</td><td>27°C</td><td>120mm</td><td>🌧️ Heavy monsoon</td></tr>
+            <tr><td><strong>September</strong></td><td>35°C</td><td>24°C</td><td>55mm</td><td>🌧️ Late monsoon</td></tr>
+            <tr><td><strong>October</strong></td><td>30°C</td><td>17°C</td><td>15mm</td><td>🍂 Autumn</td></tr>
+            <tr><td><strong>November</strong></td><td>23°C</td><td>10°C</td><td>10mm</td><td>🍂 Cool autumn</td></tr>
+            <tr><td><strong>December</strong></td><td class="temp-cold">18°C</td><td class="temp-cold">5°C</td><td>20mm</td><td>❄️ Winter</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sh">🌧️ Monsoon Season in Narowal</h3>
+      <p class="bt">Narowal receives its heaviest rainfall during the monsoon season — <strong>July to September</strong>. July and August are the wettest months with 120–130mm of rainfall. Flash flooding can occur in low-lying areas of Narowal city and surrounding rural areas during heavy monsoon downpours. NDMA and Punjab government issue alerts during heavy rain periods.</p>
+
+      <h3 class="sh">🔥 Summer Heat in Narowal</h3>
+      <p class="bt">Narowal experiences intense summer heat from May to July. Peak temperatures regularly hit <strong>42–46°C</strong> in June. Heat strokes are a serious concern — stay hydrated, avoid going out between 11am–4pm during June, and use fans and coolers. DHQ Hospital Narowal (0542-412345) handles heat-related emergencies.</p>
+
+      <h3 class="sh">❄️ Winter in Narowal</h3>
+      <p class="bt">Winters are cold from November to February. Minimum temperatures drop to <strong>3–8°C</strong> in December and January. Dense fog is common in December–January mornings, causing road accidents on GT Road and reducing visibility. Punjab Safe Cities Authority issues fog alerts. No snowfall in Narowal — it is in the plains of Punjab.</p>
+
+      <h3 class="sh">🌫️ Fog Advisory — Narowal</h3>
+      <div class="info-card" style="border-color:rgba(251,191,36,.2);background:rgba(251,191,36,.06);">
+        <div class="ic-title" style="color:rgba(251,191,36,.7);">⚠️ Winter Fog Alert</div>
+        <p style="font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.75;">Dense fog is common in Narowal from <strong>December to February</strong>, especially early mornings (4am–9am). Drive slowly on GT Road and Narowal–Shakargarh Road. Use fog lights. NDMA Fog Alert helpline: <a href="tel:1700" style="color:#fbbf24;">1700</a>. Punjab Highway Patrol: <a href="tel:130" style="color:#fbbf24;">130</a>.</p>
+      </div>
+
+      <!-- FAQ -->
+      <h2 class="st" style="margin-top:22px;">Frequently Asked <em>Questions</em></h2>
+      <div class="faq-item"><div class="faq-q" onclick="faq(this)">What is the weather in Narowal today?<span class="faq-arr">▼</span></div><div class="faq-a">Current weather for Narowal is shown in the live widget above, updated every 30 minutes. Narowal is currently in the monsoon season (July–September 2026) with temperatures around 35–42°C and chances of rain.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faq(this)">What is the hottest month in Narowal?<span class="faq-arr">▼</span></div><div class="faq-a">June and July are the hottest months in Narowal with temperatures regularly reaching 42–46°C. The monsoon season brings relief from late July through September with rainfall and slightly cooler temperatures.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faq(this)">Does it rain a lot in Narowal?<span class="faq-arr">▼</span></div><div class="faq-a">Narowal receives significant rainfall during the monsoon season July–September with 120–130mm in July and August alone. Flash flooding can occur in low-lying areas. Outside the monsoon season Narowal is relatively dry. Annual rainfall is approximately 500–600mm.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faq(this)">Does it snow in Narowal?<span class="faq-arr">▼</span></div><div class="faq-a">No. Narowal is located in the plains of Punjab at 238 metres elevation and does not receive snowfall. Winters are cold with minimum temperatures of 3–8°C in December–January but snow does not occur. Frost may form on very cold nights in January.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faq(this)">What is the best time to visit Narowal?<span class="faq-arr">▼</span></div><div class="faq-a">The best time to visit Narowal is October to March when temperatures are pleasant at 15–28°C. The Kartarpur Corridor is most comfortable to visit in winter. Avoid June–August due to extreme heat of 40–45°C. Monsoon season July–September is beautiful but brings flooding risk.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="faq(this)">What is the weather in Shakargarh and Zafarwal?<span class="faq-arr">▼</span></div><div class="faq-a">Shakargarh and Zafarwal have nearly identical weather to Narowal as all three are in the same district. Shakargarh is slightly cooler in summer and receives slightly more rainfall due to its proximity to the Ravi river and forested areas. Use the city tabs above to switch between the three cities.</div></div>
+
+      <div style="margin-top:20px;">
+        <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);margin-bottom:10px;">More on Apna Narowal</div>
+        <div class="il-grid">
+          <a class="il-link" href="prayer-times-narowal.html">🕌 Prayer Times</a>
+          <a class="il-link" href="load-shedding-narowal.html">⚡ Load Shedding</a>
+          <a class="il-link" href="gold-rate-narowal.html">🏅 Gold Rate</a>
+          <a class="il-link" href="petrol-price-narowal.html">⛽ Petrol Price</a>
+          <a class="il-link" href="narowal-hospitals.html">🏥 Hospitals</a>
+          <a class="il-link" href="narowal-news.html">📰 Narowal News</a>
+          <a class="il-link" href="electricity-bill-narowal.html">💡 Electricity Bill</a>
+          <a class="il-link" href="index.html">🏠 Full Directory</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div>
+      <div class="sb-card">
+        <div class="sb-title">📍 Narowal Now</div>
+        <ul class="sb-list">
+          <li><span>Temperature</span><strong id="sb-temp" style="color:#fbbf24;">—</strong></li>
+          <li><span>Feels Like</span><strong id="sb-feels" style="color:rgba(255,255,255,.7);">—</strong></li>
+          <li><span>Humidity</span><strong id="sb-hum" style="color:#60a5fa;">—</strong></li>
+          <li><span>Wind</span><strong id="sb-wind" style="color:rgba(255,255,255,.7);">—</strong></li>
+          <li><span>UV Index</span><strong id="sb-uv" style="color:#fbbf24;">—</strong></li>
+          <li><span>Rain Today</span><strong id="sb-rain" style="color:#60a5fa;">—</strong></li>
+        </ul>
+      </div>
+
+      <div class="sb-card">
+        <div class="sb-title">🌡️ Season Now</div>
+        <div style="text-align:center;padding:10px 0;">
+          <div style="font-size:2.5rem;margin-bottom:6px;" id="season-icon">🌧️</div>
+          <div style="font-size:1rem;font-weight:700;color:white;" id="season-name">Monsoon Season</div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.5);margin-top:4px;" id="season-desc">July–September · Heavy Rain Expected</div>
+        </div>
+      </div>
+
+      <div class="sb-card">
+        <div class="sb-title">⚠️ Weather Tips — July</div>
+        <ul style="list-style:none;font-size:.78rem;color:rgba(255,255,255,.6);line-height:2.2;">
+          <li>☔ Carry umbrella daily</li>
+          <li>🚗 Drive slow in rain — GT Road floods</li>
+          <li>💧 Stay hydrated — heat + humidity</li>
+          <li>🌊 Avoid low-lying areas in heavy rain</li>
+          <li>📱 Check NDMA alerts: 1700</li>
+          <li>🏥 DHQ Hospital: 0542-412345</li>
+        </ul>
+      </div>
+
+      <div class="sb-card">
+        <div class="sb-title">🔗 Related Pages</div>
+        <ul class="sb-list">
+          <li><a href="prayer-times-narowal.html">Prayer Times</a></li>
+          <li><a href="load-shedding-narowal.html">Load Shedding</a></li>
+          <li><a href="narowal-hospitals.html">Hospitals</a></li>
+          <li><a href="narowal-news.html">Narowal News</a></li>
+          <li><a href="gold-rate-narowal.html">Gold Rate</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fg">
+    <div><span class="fb">Apna Narowal · اپنا نارووال</span><p>Live weather, local directory and utility services for Narowal district.</p></div>
+    <div class="fc"><h5>Utilities</h5><ul><li><a href="narowal-weather.html">Weather</a></li><li><a href="load-shedding-narowal.html">Load Shedding</a></li><li><a href="prayer-times-narowal.html">Prayer Times</a></li><li><a href="electricity-bill-narowal.html">Electricity Bill</a></li></ul></div>
+    <div class="fc"><h5>Prices</h5><ul><li><a href="gold-rate-narowal.html">Gold Rate</a></li><li><a href="petrol-price-narowal.html">Petrol Price</a></li><li><a href="currency-rate-pakistan.html">Currency Rate</a></li></ul></div>
+    <div class="fc"><h5>More</h5><ul><li><a href="narowal-hospitals.html">Hospitals</a></li><li><a href="narowal-news.html">News</a></li><li><a href="index.html">Directory</a></li></ul></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 Apna Narowal. Weather data from Open-Meteo.com (free, no API key).</span>
+    <span>Made with ♥ for Narowal</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/923001234567">💬</a>
+
+<script>
+/* ═══════════════════════════════════════════
+   CITIES CONFIG — Open-Meteo coordinates
+═══════════════════════════════════════════ */
+var CITIES = {
+  narowal:    {name:"Narowal",    label:"Narowal City",    lat:32.1000, lon:74.8747},
+  shakargarh: {name:"Shakargarh", label:"Shakargarh",      lat:32.2667, lon:75.1667},
+  zafarwal:   {name:"Zafarwal",   label:"Zafarwal",        lat:32.3417, lon:74.8994}
+};
+
+var currentCity = "narowal";
+var weatherData = {};
+
+/* ── WEATHER CODE → ICON + DESC ── */
+function wCode(code, isDay){
+  var d = isDay !== 0;
+  var map = {
+    0:  [d?"☀️":"🌙","Clear sky"],
+    1:  [d?"🌤️":"🌙","Mainly clear"],
+    2:  ["⛅","Partly cloudy"],
+    3:  ["☁️","Overcast"],
+    45: ["🌫️","Foggy"],
+    48: ["🌫️","Icy fog"],
+    51: ["🌦️","Light drizzle"],
+    53: ["🌦️","Drizzle"],
+    55: ["🌧️","Heavy drizzle"],
+    61: ["🌧️","Light rain"],
+    63: ["🌧️","Moderate rain"],
+    65: ["🌧️","Heavy rain"],
+    71: ["🌨️","Light snow"],
+    73: ["🌨️","Snowfall"],
+    75: ["❄️","Heavy snow"],
+    80: ["🌦️","Light showers"],
+    81: ["🌧️","Showers"],
+    82: ["⛈️","Heavy showers"],
+    95: ["⛈️","Thunderstorm"],
+    96: ["⛈️","Thunder + hail"],
+    99: ["⛈️","Heavy thunder"]
+  };
+  return map[code] || ["🌡️","Unknown"];
+}
+
+function windDir(deg){
+  var dirs = ["N","NE","E","SE","S","SW","W","NW"];
+  return dirs[Math.round(deg/45)%8];
+}
+
+function uvLabel(uv){
+  if(uv<=2) return "Low";
+  if(uv<=5) return "Moderate";
+  if(uv<=7) return "High";
+  if(uv<=10) return "Very High";
+  return "Extreme";
+}
+
+function dayName(dateStr, i){
+  if(i===0) return "Today";
+  if(i===1) return "Tomorrow";
+  var d = new Date(dateStr);
+  return d.toLocaleDateString("en-PK",{weekday:"short",day:"numeric",month:"short"});
+}
+
+/* ── FETCH + RENDER ── */
+function loadCity(city){
+  currentCity = city;
+  document.querySelectorAll(".city-tab").forEach(function(t,i){
+    t.classList.toggle("active", ["narowal","shakargarh","zafarwal"][i]===city);
+  });
+  document.getElementById("curr-temp").innerHTML = '<span class="spinner"></span>';
+  document.getElementById("weather-desc").textContent = "Loading weather...";
+  document.getElementById("hourly-scroll").innerHTML = '<div class="loading">Loading...</div>';
+  document.getElementById("forecast-7day").innerHTML = '<div class="loading">Loading...</div>';
+  fetchWeather(city);
+}
+
+function fetchWeather(city){
+  var c = CITIES[city];
+  var url = "https://api.open-meteo.com/v1/forecast"
+    + "?latitude="+c.lat
+    + "&longitude="+c.lon
+    + "&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,weather_code,wind_speed_10m,wind_direction_10m,uv_index,visibility"
+    + "&hourly=temperature_2m,precipitation_probability,weather_code"
+    + "&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,uv_index_max,wind_speed_10m_max"
+    + "&timezone=Asia%2FKarachi"
+    + "&forecast_days=7";
+
+  fetch(url)
+    .then(function(r){return r.json();})
+    .then(function(data){
+      weatherData[city] = data;
+      renderCurrent(data, c);
+      renderHourly(data);
+      renderForecast(data);
+    })
+    .catch(function(){
+      document.getElementById("curr-temp").textContent = "--°";
+      document.getElementById("weather-desc").textContent = "Unable to load — check connection";
+    });
+}
+
+function renderCurrent(data, c){
+  var cur = data.current;
+  var wi = wCode(cur.weather_code, cur.is_day);
+  var temp = Math.round(cur.temperature_2m);
+  var feels = Math.round(cur.apparent_temperature);
+  var hum = cur.relative_humidity_2m;
+  var wind = Math.round(cur.wind_speed_10m);
+  var windD = windDir(cur.wind_direction_10m);
+  var uv = Math.round(cur.uv_index||0);
+  var vis = Math.round((cur.visibility||10000)/1000);
+  var rainToday = Math.round(data.daily.precipitation_sum[0]*10)/10;
+  var maxT = Math.round(data.daily.temperature_2m_max[0]);
+  var minT = Math.round(data.daily.temperature_2m_min[0]);
+  var rainChance = data.daily.precipitation_probability_max[0];
+
+  // Hero
+  document.getElementById("hero-bg").textContent = wi[0];
+  document.getElementById("city-name").textContent = c.name;
+  document.getElementById("city-label").textContent = c.label;
+  document.getElementById("curr-temp").innerHTML = temp+'<span class="wh-unit">°C</span>';
+  document.getElementById("feels-like").textContent = "Feels like "+feels+"°C";
+  document.getElementById("weather-desc").textContent = wi[1];
+  document.getElementById("humidity").textContent = hum+"%";
+  document.getElementById("wind").textContent = wind+" km/h "+windD;
+  document.getElementById("rain-chance").textContent = (rainChance||0)+"%";
+  document.getElementById("uv-index").textContent = uv+" ("+uvLabel(uv)+")";
+  document.getElementById("visibility").textContent = vis+" km";
+  document.getElementById("min-max").textContent = minT+"° / "+maxT+"°";
+
+  var now = new Date();
+  document.getElementById("updated-time").textContent = "Updated: "+now.toLocaleTimeString("en-PK",{hour:"2-digit",minute:"2-digit"});
+
+  // Sidebar
+  document.getElementById("sb-temp").textContent = temp+"°C";
+  document.getElementById("sb-feels").textContent = feels+"°C";
+  document.getElementById("sb-hum").textContent = hum+"%";
+  document.getElementById("sb-wind").textContent = wind+" km/h";
+  document.getElementById("sb-uv").textContent = uv+" - "+uvLabel(uv);
+  document.getElementById("sb-rain").textContent = rainToday+"mm";
+
+  // UV bar
+  document.getElementById("uv-val").textContent = uv;
+  document.getElementById("uv-label").textContent = uvLabel(uv);
+  document.getElementById("uv-marker").style.left = Math.min(uv/12*100,100)+"%";
+
+  // Season
+  var month = now.getMonth();
+  var seasons = [
+    ["❄️","Winter","Dec–Feb · Cold & Foggy"],
+    ["❄️","Winter","Dec–Feb · Cold & Foggy"],
+    ["🌸","Spring","Mar–Apr · Pleasant"],
+    ["🌸","Spring","Mar–Apr · Pleasant"],
+    ["🔥","Pre-Summer","May · Getting Hot"],
+    ["🔥","Peak Summer","Jun · Extreme Heat 43°C+"],
+    ["🌧️","Monsoon","Jul–Sep · Rain & Thunder"],
+    ["🌧️","Monsoon","Jul–Sep · Rain & Thunder"],
+    ["🌧️","Late Monsoon","Sep · Cooling Down"],
+    ["🍂","Autumn","Oct–Nov · Pleasant"],
+    ["🍂","Autumn","Oct–Nov · Pleasant"],
+    ["❄️","Winter","Dec–Feb · Cold & Foggy"]
+  ];
+  var s = seasons[month];
+  document.getElementById("season-icon").textContent = s[0];
+  document.getElementById("season-name").textContent = s[1];
+  document.getElementById("season-desc").textContent = s[2];
+}
+
+function renderHourly(data){
+  var now = new Date();
+  var nowH = now.getHours();
+  var temps = data.hourly.temperature_2m;
+  var codes = data.hourly.weather_code;
+  var probs = data.hourly.precipitation_probability;
+  var html = "";
+  for(var i=0;i<24;i++){
+    var h = (nowH+i)%24;
+    var idx = nowH+i;
+    if(idx>=48) break;
+    var wi = wCode(codes[idx], h>=6&&h<20?1:0);
+    var label = i===0?"Now":(h<10?"0"+h:h)+":00";
+    html += '<div class="hour-card'+(i===0?" now":"")+'"><div class="hc-time">'+label+'</div><div class="hc-icon">'+wi[0]+'</div><div class="hc-temp">'+Math.round(temps[idx])+'°</div><div class="hc-rain">'+(probs[idx]||0)+'%</div></div>';
+  }
+  document.getElementById("hourly-scroll").innerHTML = html;
+}
+
+function renderForecast(data){
+  var daily = data.daily;
+  var html = "";
+  for(var i=0;i<7;i++){
+    var wi = wCode(daily.weather_code[i], 1);
+    var max = Math.round(daily.temperature_2m_max[i]);
+    var min = Math.round(daily.temperature_2m_min[i]);
+    var rain = daily.precipitation_probability_max[i]||0;
+    html += '<div class="day-row"><div class="dr-day">'+dayName(daily.time[i],i)+'</div><div class="dr-icon">'+wi[0]+'</div><div class="dr-desc">'+wi[1]+'</div><div class="dr-rain">'+rain+'%</div><div class="dr-temps"><span class="dr-max">'+max+'°</span><span class="dr-min">'+min+'°</span></div></div>';
+  }
+  document.getElementById("forecast-7day").innerHTML = html;
+}
+
+/* ── TIME ── */
+function updateTime(){
+  var now = new Date();
+  document.getElementById("tb-time").textContent = now.toLocaleString("en-PK",{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+}
+
+function faq(el){
+  var w=el.classList.contains("open");
+  document.querySelectorAll(".faq-q").forEach(function(q){q.classList.remove("open");q.nextElementSibling.classList.remove("open");});
+  if(!w){el.classList.add("open");el.nextElementSibling.classList.add("open");}
+}
+
+/* ── INIT ── */
+loadCity("narowal");
+updateTime();
+setInterval(updateTime, 60000);
+setInterval(function(){loadCity(currentCity);}, 1800000); // refresh every 30 min
+</script>
+</body>
+</html>
