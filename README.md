@@ -37,5 +37,4 @@
 4. Live at: `https://USERNAME.github.io/apna-narowal/`
 
 ## Contact
-WhatsApp: 0300-1234567  
-Email: info@apnanarowal.pk
+Email: apnanarowal@gmail.com
