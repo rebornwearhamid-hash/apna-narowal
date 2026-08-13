@@ -1,4 +1,2069 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ PHASE 3: DYNAMIC SEO META ═══ -->
+<title id="metaTitle">Apna Narowal – Local Directory for Narowal, Punjab Pakistan</title>
+<meta name="description" id="metaDesc" content="Find hospitals, schools, restaurants, government offices and businesses in Narowal district, Punjab Pakistan. Verified listings with contact numbers, addresses and reviews.">
+<meta name="keywords" content="Narowal directory, businesses in Narowal, hospitals Narowal, schools Narowal, Shakargarh, Zafarwal, Punjab Pakistan">
+<link rel="canonical" id="metaCanonical" href="https://apnanarowal.pk/">
+<meta property="og:title" id="ogTitle" content="Apna Narowal – Local Directory">
+<meta property="og:description" id="ogDesc" content="Narowal's most complete local business directory.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://apnanarowal.pk/">
+<meta property="og:image" content="https://apnanarowal.pk/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Narowal">
+
+<!-- ═══ PHASE 3: WEBSITE SCHEMA ═══ -->
+<script type="application/ld+json" id="schemaMain">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Apna Narowal",
+  "url":"https://apnanarowal.pk",
+  "description":"Local business directory for Narowal district, Punjab, Pakistan",
+  "potentialAction":{"@type":"SearchAction","target":"https://apnanarowal.pk/search?q={search_term_string}","query-input":"required name=search_term_string"},
+  "publisher":{"@type":"Organization","name":"Apna Narowal","url":"https://apnanarowal.pk","logo":{"@type":"ImageObject","url":"https://apnanarowal.pk/logo.png"}}
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════
+   APNA NAROWAL — PRODUCTION DESIGN SYSTEM v2.0
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --green:#1a6b3c;--green-mid:#2d9e5f;--green-pale:#e8f5ee;--green-dark:#0e3d22;
+  --gold:#c9882a;--gold-light:#f0c060;--gold-pale:#fdf3e0;
+  --cream:#faf7f0;--white:#fff;--dark:#111510;
+  --text:#2c2c2a;--muted:#6b6b60;--muted2:#9a9a8e;
+  --border:#e2ddd4;--red:#c0392b;--red-pale:#fdf0ee;
+  --blue:#2563eb;--blue-pale:#eff6ff;
+  --shadow-sm:0 1px 4px rgba(0,0,0,.06);
+  --shadow-md:0 4px 20px rgba(0,0,0,.09);
+  --shadow-lg:0 12px 40px rgba(0,0,0,.13);
+  --r:12px;--r-lg:18px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+button,input,select,textarea{font-family:inherit;}
+
+/* ── TOPBAR ── */
+.topbar{background:var(--green-dark);color:rgba(255,255,255,.75);font-size:.72rem;padding:6px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;}
+.topbar a{color:var(--gold-light);}
+
+/* ── NAVBAR ── */
+nav{background:var(--white);border-bottom:2px solid var(--border);position:sticky;top:0;z-index:300;box-shadow:0 2px 16px rgba(0,0,0,.07);}
+.nav-inner{max-width:1200px;margin:auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:62px;}
+.logo{display:flex;align-items:center;gap:10px;cursor:pointer;}
+.logo-icon{width:38px;height:38px;background:var(--green);border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-family:'Amiri',serif;font-size:1.3rem;font-weight:700;}
+.logo-text .lt-main{font-family:'Amiri',serif;font-size:1.2rem;font-weight:700;color:var(--green);display:block;line-height:1.1;}
+.logo-text .lt-sub{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+.nav-tabs{display:flex;list-style:none;gap:2px;}
+.nav-tabs a{padding:6px 13px;border-radius:7px;font-size:.82rem;font-weight:500;color:var(--text);transition:all .2s;cursor:pointer;display:block;}
+.nav-tabs a:hover,.nav-tabs a.active{background:var(--green-pale);color:var(--green);}
+.nav-right{display:flex;align-items:center;gap:8px;}
+.nav-cta{background:var(--green);color:white;border:none;padding:8px 18px;border-radius:8px;font-size:.82rem;font-weight:600;transition:background .2s;cursor:pointer;}
+.nav-cta:hover{background:var(--green-mid);}
+.nav-mobile-btn{display:none;background:none;border:none;font-size:1.4rem;cursor:pointer;}
+
+/* ── PAGES ── */
+.page-section{display:none;}
+.page-section.active{display:block;}
+.container{max-width:1200px;margin:auto;padding:0 20px;}
+
+/* ── HERO ── */
+.hero{background:var(--green);background-image:radial-gradient(ellipse at 75% 40%,rgba(45,158,95,.5) 0%,transparent 55%),radial-gradient(ellipse at 15% 80%,rgba(201,136,42,.2) 0%,transparent 50%);color:white;padding:72px 20px 88px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'اپنا نارووال';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Amiri',serif;font-size:clamp(5rem,18vw,14rem);color:rgba(255,255,255,.04);white-space:nowrap;pointer-events:none;}
+.hero-badge{display:inline-block;background:rgba(240,192,96,.2);border:1px solid rgba(240,192,96,.4);color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 16px;border-radius:999px;margin-bottom:18px;}
+.hero h1{font-family:'Amiri',serif;font-size:clamp(2.2rem,6vw,4rem);font-weight:700;line-height:1.15;margin-bottom:14px;}
+.hero h1 em{color:var(--gold-light);font-style:normal;}
+.hero p{font-size:1rem;color:rgba(255,255,255,.82);max-width:520px;margin:0 auto 32px;}
+.hero-stats{display:flex;justify-content:center;gap:44px;margin-top:44px;flex-wrap:wrap;}
+.hero-stat strong{display:block;font-family:'Amiri',serif;font-size:2rem;color:var(--gold-light);}
+.hero-stat span{font-size:.73rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em;}
+
+/* ── SEARCH ── */
+.search-wrap{max-width:720px;margin:0 auto;position:relative;z-index:10;}
+.search-bar{display:flex;background:white;border-radius:14px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.28);}
+.search-bar input{flex:1;padding:17px 20px;border:none;outline:none;font-size:.95rem;color:var(--text);}
+.search-bar select{padding:0 14px;border:none;border-left:1px solid var(--border);outline:none;font-size:.82rem;color:var(--muted);background:white;cursor:pointer;min-width:130px;}
+.near-me-btn{background:white;color:var(--green);border:none;padding:0 16px;font-weight:700;font-size:.8rem;cursor:pointer;display:flex;align-items:center;gap:6px;border-left:1px solid var(--border);transition:all .2s;white-space:nowrap;}
+.near-me-btn:hover{background:var(--green-pale);}
+.near-me-btn.locating{color:var(--gold);pointer-events:none;}
+.near-me-btn.located{color:var(--green);background:var(--green-pale);}
+.nm-dot{width:8px;height:8px;background:currentColor;border-radius:50%;flex-shrink:0;}
+.locating .nm-dot{animation:blink .7s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+.search-bar button.search-btn{background:var(--gold);color:white;border:none;padding:0 28px;font-weight:700;font-size:.9rem;transition:background .2s;cursor:pointer;white-space:nowrap;}
+.search-bar button.search-btn:hover{background:#b87820;}
+
+/* Search dropdown */
+.search-dropdown{position:absolute;top:calc(100% + 8px);left:0;right:0;background:white;border-radius:var(--r);box-shadow:var(--shadow-lg);border:1.5px solid var(--border);max-height:420px;overflow-y:auto;display:none;z-index:100;}
+.search-dropdown.visible{display:block;}
+.sd-header{padding:10px 18px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;}
+.sd-item{display:flex;align-items:flex-start;gap:12px;padding:13px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s;}
+.sd-item:last-child{border-bottom:none;}
+.sd-item:hover{background:var(--green-pale);}
+.sd-icon{width:42px;height:42px;border-radius:9px;background:var(--green-pale);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.25rem;}
+.sd-name{font-size:.88rem;font-weight:700;color:var(--dark);margin-bottom:2px;}
+.sd-meta{font-size:.73rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;}
+.sd-cat{font-size:.6rem;font-weight:700;padding:2px 7px;border-radius:999px;background:var(--green-pale);color:var(--green);text-transform:uppercase;}
+.sd-stars{color:var(--gold);font-size:.78rem;}
+.sd-empty{padding:24px;text-align:center;font-size:.85rem;color:var(--muted);}
+
+/* Trending searches */
+.trending-bar{display:flex;align-items:center;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center;}
+.trending-label{font-size:.72rem;color:rgba(255,255,255,.6);font-weight:600;}
+.trending-chip{background:rgba(255,255,255,.15);color:white;border:1px solid rgba(255,255,255,.25);font-size:.72rem;font-weight:600;padding:4px 12px;border-radius:999px;cursor:pointer;transition:all .2s;}
+.trending-chip:hover{background:rgba(255,255,255,.25);}
+
+/* ── SECTION HEADERS ── */
+.section-label{display:inline-flex;align-items:center;gap:7px;font-size:.68rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--green);margin-bottom:8px;}
+.section-label::before,.section-label::after{content:'';width:16px;height:2px;background:var(--green);border-radius:1px;}
+h2.stitle{font-family:'Amiri',serif;font-size:clamp(1.5rem,3vw,2.2rem);color:var(--dark);margin-bottom:8px;line-height:1.2;}
+h2.stitle em{color:var(--green);font-style:normal;}
+.sintro{color:var(--muted);font-size:.9rem;max-width:540px;line-height:1.75;margin-bottom:28px;}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 20px;border-radius:8px;font-size:.8rem;font-weight:600;border:none;transition:all .2s;cursor:pointer;white-space:nowrap;}
+.btn-green{background:var(--green);color:white;}.btn-green:hover{background:var(--green-mid);}
+.btn-wa{background:#25D366;color:white;}.btn-wa:hover{background:#1ebe5d;}
+.btn-outline{background:transparent;color:var(--green);border:1.5px solid var(--green);}.btn-outline:hover{background:var(--green-pale);}
+.btn-gold{background:var(--gold);color:white;}.btn-gold:hover{background:#b87820;}
+.btn-red{background:var(--red);color:white;}
+.btn-blue{background:var(--blue);color:white;}
+.btn-ghost{background:rgba(255,255,255,.15);color:white;border:1px solid rgba(255,255,255,.3);}.btn-ghost:hover{background:rgba(255,255,255,.25);}
+.btn-sm{padding:6px 13px;font-size:.74rem;border-radius:7px;}
+.btn-lg{padding:13px 28px;font-size:.9rem;border-radius:10px;}
+.btn-block{width:100%;justify-content:center;}
+
+/* ── QUICK CATEGORIES ── */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;}
+.cat-card{background:var(--cream);border:1.5px solid var(--border);border-radius:var(--r);padding:18px 12px;text-align:center;cursor:pointer;transition:all .25s;position:relative;}
+.cat-card:hover{border-color:var(--green);background:var(--green-pale);transform:translateY(-3px);box-shadow:var(--shadow-md);}
+.cat-icon{font-size:1.9rem;margin-bottom:7px;display:block;}
+.cat-name{font-size:.82rem;font-weight:600;margin-bottom:2px;}
+.cat-count{font-size:.66rem;color:var(--muted);}
+.cat-card.hot::after{content:'🔥';position:absolute;top:8px;right:8px;font-size:.75rem;}
+
+/* ── LISTING CARDS ── */
+.listing-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:20px 22px;display:flex;gap:16px;align-items:flex-start;transition:all .25s;margin-bottom:12px;position:relative;}
+.listing-card:hover{border-color:var(--green-mid);box-shadow:var(--shadow-md);transform:translateX(4px);}
+.listing-card.featured-card{border-color:var(--gold);background:linear-gradient(to right,#fffef8,white);}
+.lc-icon{width:58px;height:58px;border-radius:10px;background:var(--green-pale);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.6rem;}
+.lc-body{flex:1;min-width:0;}
+.lc-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;}
+.lc-name{font-size:.97rem;font-weight:700;color:var(--dark);}
+.badge{display:inline-block;font-size:.58rem;font-weight:700;padding:2px 7px;border-radius:999px;letter-spacing:.05em;text-transform:uppercase;}
+.badge-verified{background:var(--green);color:white;}
+.badge-featured{background:var(--gold);color:white;}
+.badge-claimed{background:var(--blue);color:white;}
+.badge-new{background:#8b5cf6;color:white;}
+/* Rating stars */
+.rating-inline{display:flex;align-items:center;gap:4px;}
+.stars-display{color:var(--gold);font-size:.82rem;letter-spacing:1px;}
+.rating-num{font-size:.75rem;color:var(--muted);}
+/* Open/closed */
+.open-badge{font-size:.68rem;font-weight:700;padding:2px 8px;border-radius:999px;}
+.is-open{background:var(--green-pale);color:var(--green);}
+.is-closed{background:var(--red-pale);color:var(--red);}
+.lc-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:.74rem;color:var(--muted);margin:6px 0;}
+.lc-meta span{display:flex;align-items:center;gap:3px;}
+.lc-desc{font-size:.8rem;color:var(--muted);line-height:1.55;margin-bottom:10px;}
+.lc-actions{display:flex;flex-direction:column;gap:7px;flex-shrink:0;}
+/* Favourite button */
+.fav-btn{position:absolute;top:14px;right:14px;background:none;border:none;font-size:1.2rem;cursor:pointer;opacity:.5;transition:all .2s;line-height:1;}
+.fav-btn:hover,.fav-btn.active{opacity:1;transform:scale(1.2);}
+
+/* ── FILTER BAR ── */
+.filter-wrap{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:62px;z-index:200;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.filter-bar{max-width:1200px;margin:auto;padding:12px 20px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;overflow-x:auto;}
+.filter-bar::-webkit-scrollbar{height:3px;}
+.filter-bar::-webkit-scrollbar-thumb{background:var(--border);}
+.filter-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);flex-shrink:0;}
+.filter-chip{padding:6px 14px;border-radius:999px;border:1.5px solid var(--border);background:var(--cream);font-size:.76rem;font-weight:600;transition:all .2s;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+.filter-chip:hover{border-color:var(--green);color:var(--green);}
+.filter-chip.active{background:var(--green);color:white;border-color:var(--green);}
+.filter-sort{margin-left:auto;padding:6px 10px;border:1.5px solid var(--border);border-radius:8px;font-size:.76rem;background:var(--cream);color:var(--text);outline:none;cursor:pointer;flex-shrink:0;}
+.filter-count{font-size:.76rem;color:var(--muted);flex-shrink:0;}
+
+/* ── LISTINGS PAGE HERO ── */
+.listings-hero{background:var(--green);background-image:radial-gradient(ellipse at 80% 50%,rgba(45,158,95,.4) 0%,transparent 60%);color:white;padding:40px 20px 48px;position:relative;overflow:hidden;}
+.listings-hero::before{content:attr(data-urdu);position:absolute;right:-10px;bottom:-20px;font-family:'Amiri',serif;font-size:8rem;color:rgba(255,255,255,.06);pointer-events:none;line-height:1;}
+.listings-hero-inner{max-width:1200px;margin:auto;}
+.listings-hero h1{font-family:'Amiri',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:8px;}
+.listings-hero h1 em{color:var(--gold-light);font-style:normal;}
+.listings-hero p{font-size:.9rem;color:rgba(255,255,255,.8);max-width:560px;}
+
+/* ── LISTINGS BODY ── */
+.listings-layout{max-width:1200px;margin:0 auto;padding:28px 20px;display:grid;grid-template-columns:1fr 280px;gap:28px;}
+.listings-main{}
+.listings-sidebar{display:flex;flex-direction:column;gap:16px;}
+.sidebar-sticky-inner{position:sticky;top:110px;}
+
+/* ── SIDEBAR WIDGETS ── */
+.sw-box{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:18px;margin-bottom:0;}
+.sw-title{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.sw-list{list-style:none;}
+.sw-list li{padding:7px 0;border-bottom:1px solid var(--border);font-size:.82rem;display:flex;justify-content:space-between;align-items:center;}
+.sw-list li:last-child{border-bottom:none;}
+.sw-list a{color:var(--text);transition:color .2s;cursor:pointer;}
+.sw-list a:hover{color:var(--green);}
+
+/* ── DETAIL PAGE ── */
+.detail-breadcrumb{background:var(--green-pale);padding:10px 20px;border-bottom:1px solid var(--border);font-size:.76rem;color:var(--muted);}
+.detail-breadcrumb a{color:var(--green);font-weight:500;cursor:pointer;}
+.detail-breadcrumb span{margin:0 6px;}
+.detail-body{max-width:1200px;margin:0 auto;padding:28px 20px;}
+.detail-grid{display:grid;grid-template-columns:1fr 300px;gap:28px;}
+.detail-logo{width:76px;height:76px;border-radius:14px;background:var(--green-pale);display:flex;align-items:center;justify-content:center;font-size:2.1rem;border:2px solid var(--border);margin-bottom:14px;}
+.detail-title{font-family:'Amiri',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);color:var(--dark);margin-bottom:6px;line-height:1.2;}
+.detail-addr{font-size:.85rem;color:var(--muted);margin-bottom:10px;}
+.detail-badges{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px;}
+.detail-cta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:10px;margin-bottom:22px;}
+.info-item{background:var(--cream);border:1.5px solid var(--border);border-radius:9px;padding:13px;}
+.info-lbl{font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:3px;}
+.info-val{font-size:.88rem;font-weight:600;color:var(--text);}
+.info-val a{color:var(--green);}
+.map-embed{width:100%;height:260px;border-radius:var(--r);border:2px solid var(--border);overflow:hidden;background:#e8ecf0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);gap:6px;margin-bottom:20px;}
+.map-embed iframe{width:100%;height:100%;border:none;}
+.hours-table{width:100%;border-collapse:collapse;font-size:.82rem;}
+.hours-table td{padding:8px 12px;border-bottom:1px solid var(--border);}
+.hours-table tr:last-child td{border-bottom:none;}
+.hours-table .hday{font-weight:600;}
+.hours-table .htime{color:var(--green);font-weight:600;}
+.hours-table .today td{background:var(--green-pale);}
+
+/* ── REVIEW SYSTEM (NEW) ── */
+.reviews-section{margin:24px 0;}
+.reviews-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px;}
+.reviews-header h3{font-family:'Amiri',serif;font-size:1.3rem;color:var(--dark);}
+.rating-summary{display:flex;gap:20px;align-items:center;background:var(--cream);border:1.5px solid var(--border);border-radius:var(--r);padding:16px 20px;margin-bottom:18px;}
+.big-score{text-align:center;flex-shrink:0;}
+.big-score-num{font-family:'Amiri',serif;font-size:3.5rem;color:var(--green);line-height:1;}
+.big-score-stars{color:var(--gold);font-size:1rem;}
+.big-score-count{font-size:.72rem;color:var(--muted);}
+.rating-bars{flex:1;}
+.rbar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:.75rem;}
+.rbar-lbl{width:12px;text-align:right;color:var(--muted);}
+.rbar{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden;}
+.rbar-fill{height:100%;background:var(--gold);border-radius:3px;}
+.rbar-n{width:22px;color:var(--muted);}
+.review-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:18px;margin-bottom:10px;}
+.reviewer{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.reviewer-av{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:.85rem;flex-shrink:0;}
+.reviewer-name{font-weight:600;font-size:.86rem;}
+.reviewer-date{font-size:.7rem;color:var(--muted);}
+.review-stars{color:var(--gold);font-size:.82rem;margin-left:auto;}
+.review-text{font-size:.83rem;color:var(--muted);line-height:1.65;}
+/* Write review form */
+.write-review{background:var(--green-pale);border:1.5px solid rgba(26,107,60,.15);border-radius:var(--r);padding:20px;margin-top:16px;}
+.write-review h4{font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:14px;}
+.star-picker{display:flex;gap:6px;margin-bottom:12px;cursor:pointer;}
+.star-pick{font-size:1.6rem;transition:transform .1s;line-height:1;}
+.star-pick:hover,.star-pick.selected{transform:scale(1.15);}
+.review-input{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:.85rem;background:white;outline:none;transition:border-color .2s;resize:vertical;min-height:80px;margin-bottom:10px;}
+.review-input:focus{border-color:var(--green);}
+
+/* ── CLAIM + REPORT (NEW) ── */
+.action-strip{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;padding:14px 16px;background:var(--cream);border-radius:var(--r);border:1px solid var(--border);}
+.action-strip-label{font-size:.72rem;color:var(--muted);display:flex;align-items:center;margin-right:4px;}
+.claim-btn{background:var(--blue-pale);color:var(--blue);border:1.5px solid rgba(37,99,235,.2);padding:6px 14px;border-radius:7px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s;}
+.claim-btn:hover{background:var(--blue);color:white;}
+.report-btn{background:var(--red-pale);color:var(--red);border:1.5px solid rgba(192,57,43,.15);padding:6px 14px;border-radius:7px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s;}
+.report-btn:hover{background:var(--red);color:white;}
+
+/* ── INQUIRY / GET QUOTE (NEW) ── */
+.inquiry-box{background:var(--green);border-radius:var(--r);padding:20px;color:white;margin-top:16px;}
+.inquiry-box h4{font-family:'Amiri',serif;font-size:1.1rem;margin-bottom:8px;}
+.inquiry-box p{font-size:.8rem;color:rgba(255,255,255,.8);margin-bottom:14px;}
+.inquiry-input{width:100%;padding:10px 14px;border:none;border-radius:8px;font-size:.85rem;margin-bottom:8px;outline:none;}
+.inquiry-row{display:flex;gap:8px;}
+
+/* ── CLICK TRACKING ── */
+.click-stat{font-size:.68rem;color:var(--muted2);display:flex;align-items:center;gap:3px;}
+
+/* ── RELATED GRID ── */
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:14px;}
+.related-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:14px;cursor:pointer;transition:all .25s;}
+.related-card:hover{border-color:var(--green-mid);box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.related-card h3{font-size:.86rem;font-weight:700;color:var(--dark);margin-bottom:3px;}
+.related-card p{font-size:.73rem;color:var(--muted);}
+
+/* ── NEAR ME ── */
+.nearme-panel{background:var(--white);padding:36px 20px;display:none;}
+.nearme-panel.visible{display:block;}
+.nearme-top{max-width:1200px;margin:0 auto 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.nearme-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px;}
+.dist-badge{display:inline-flex;align-items:center;gap:3px;font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:999px;}
+.dist-near{background:var(--green);color:white;}
+.dist-mid{background:var(--gold);color:white;}
+.dist-far{background:var(--muted2);color:white;}
+.location-pill{display:inline-flex;align-items:center;gap:5px;background:var(--green-pale);color:var(--green);border:1px solid rgba(26,107,60,.2);padding:5px 12px;border-radius:999px;font-size:.76rem;font-weight:600;}
+.loc-err{background:var(--red-pale);border:1.5px solid rgba(192,57,43,.2);border-radius:var(--r);padding:18px 22px;text-align:center;display:none;max-width:500px;margin:0 auto;}
+.loc-err.visible{display:block;}
+.loc-err h3{color:var(--red);font-size:.95rem;margin-bottom:6px;}
+.loc-err p{font-size:.82rem;color:var(--muted);}
+
+/* ── SEARCH RESULTS PAGE ── */
+.search-results-page{background:var(--white);padding:40px 20px;display:none;}
+.sr-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+.rc{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .25s;}
+.rc:hover{border-color:var(--green-mid);box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.rc-top{display:flex;gap:12px;margin-bottom:10px;}
+.rc-icon{width:48px;height:48px;border-radius:9px;background:var(--green-pale);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.4rem;}
+.rc-name{font-size:.93rem;font-weight:700;color:var(--dark);margin-bottom:2px;}
+.rc-area{font-size:.72rem;color:var(--muted);}
+.rc-desc{font-size:.78rem;color:var(--muted);line-height:1.5;margin-bottom:10px;}
+.rc-foot{display:flex;justify-content:space-between;align-items:center;}
+.rc-phone{font-size:.78rem;color:var(--green);font-weight:600;}
+.rc-view{background:var(--green-pale);color:var(--green);border:1px solid rgba(26,107,60,.2);padding:5px 12px;border-radius:6px;font-size:.72rem;font-weight:600;cursor:pointer;transition:all .2s;border:none;}
+.rc-view:hover{background:var(--green);color:white;}
+
+/* ── SUBMIT FORM ── */
+.submit-page{padding:52px 20px;}
+.submit-wrap{max-width:660px;margin:auto;}
+.submit-hero{text-align:center;margin-bottom:32px;}
+.sh-icon{font-size:3.2rem;display:block;margin-bottom:12px;}
+.form-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r-lg);padding:36px;box-shadow:var(--shadow-md);}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-field{display:flex;flex-direction:column;gap:5px;}
+.form-field.full{grid-column:1/-1;}
+.form-field label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);}
+.form-field label .req{color:var(--red);}
+.fi,.fs,.ft{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:.88rem;background:var(--cream);color:var(--text);outline:none;transition:border-color .2s,background .2s;}
+.fi:focus,.fs:focus,.ft:focus{border-color:var(--green);background:white;}
+.fi.err,.fs.err,.ft.err{border-color:var(--red);background:var(--red-pale);}
+.ft{resize:vertical;min-height:100px;}
+.ferr{font-size:.7rem;color:var(--red);display:none;}
+.ferr.show{display:block;}
+/* Pricing tiers */
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;}
+.price-tier{border:2px solid var(--border);border-radius:var(--r);padding:14px;text-align:center;cursor:pointer;transition:all .2s;}
+.price-tier:hover{border-color:var(--green);}
+.price-tier.selected{border-color:var(--green);background:var(--green-pale);}
+.price-tier.recommended{border-color:var(--gold);position:relative;}
+.price-tier.recommended::before{content:'Popular';position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);color:white;font-size:.6rem;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap;}
+.pt-name{font-weight:700;font-size:.85rem;margin-bottom:4px;}
+.pt-price{font-family:'Amiri',serif;font-size:1.3rem;color:var(--green);font-weight:700;}
+.pt-price span{font-size:.7rem;font-family:'Plus Jakarta Sans',sans-serif;color:var(--muted);}
+.pt-features{font-size:.68rem;color:var(--muted);line-height:1.8;margin-top:6px;}
+/* Submit btn */
+.submit-btn{width:100%;padding:14px;background:var(--green);color:white;border:none;border-radius:10px;font-size:.95rem;font-weight:700;transition:all .2s;margin-top:6px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;}
+.submit-btn:hover{background:var(--green-mid);transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,107,60,.25);}
+.submit-btn.loading{pointer-events:none;opacity:.7;}
+/* Success */
+.submit-success{text-align:center;padding:40px 24px;display:none;flex-direction:column;align-items:center;}
+.submit-success.show{display:flex;}
+.success-icon-wrap{width:72px;height:72px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;margin-bottom:16px;}
+
+/* ── MODALS ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px;}
+.modal-overlay.open{display:flex;}
+.modal{background:var(--white);border-radius:var(--r-lg);padding:28px;max-width:480px;width:100%;position:relative;box-shadow:var(--shadow-lg);animation:slideUp .25s ease;}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.modal-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--muted);}
+.modal h3{font-family:'Amiri',serif;font-size:1.4rem;color:var(--dark);margin-bottom:8px;}
+.modal p{font-size:.85rem;color:var(--muted);line-height:1.7;margin-bottom:16px;}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--dark);color:white;padding:12px 24px;border-radius:999px;font-size:.82rem;font-weight:600;z-index:2000;transition:transform .35s ease;white-space:nowrap;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+.toast.success{background:var(--green);}
+.toast.error{background:var(--red);}
+
+/* ── TAGS ── */
+.tags{display:flex;flex-wrap:wrap;gap:7px;}
+.tag{background:var(--green-pale);color:var(--green);font-size:.71rem;font-weight:600;padding:4px 12px;border-radius:999px;border:1px solid rgba(26,107,60,.2);cursor:pointer;transition:all .2s;}
+.tag:hover{background:var(--green);color:white;}
+
+/* ── AD SLOT ── */
+.ad-slot{background:var(--gold-pale);border:1.5px dashed rgba(201,136,42,.35);border-radius:9px;padding:14px 18px;text-align:center;font-size:.76rem;color:var(--gold);font-weight:600;margin:16px 0;}
+.ad-slot a{color:var(--gold);font-weight:700;}
+
+/* ── LOAD MORE ── */
+.load-more-wrap{text-align:center;padding:24px 20px;}
+
+/* ── WA FLOAT ── */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:999;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:white;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .2s;}
+.wa-float:hover{transform:scale(1.1);}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);color:rgba(255,255,255,.6);padding:48px 20px 22px;}
+.footer-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;margin-bottom:32px;}
+.footer-brand-name{font-family:'Amiri',serif;font-size:1.2rem;color:white;margin-bottom:8px;display:block;}
+.footer-brand p{font-size:.8rem;line-height:1.7;max-width:220px;}
+.footer-col h5{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:white;margin-bottom:12px;}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:8px;}
+.footer-col a{font-size:.8rem;color:rgba(255,255,255,.5);transition:color .2s;cursor:pointer;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-bottom{max-width:1200px;margin:auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:.72rem;}
+
+/* ── ANIMATION ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.fade-in{animation:fadeUp .4s ease both;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .listings-layout{grid-template-columns:1fr;}
+  .listings-sidebar{display:none;}
+  .detail-grid{grid-template-columns:1fr;}
+  .pricing-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  .nav-tabs{display:none;}
+  .nav-tabs.open{display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:white;border-bottom:2px solid var(--border);padding:10px 14px;gap:4px;box-shadow:var(--shadow-md);z-index:250;}
+  .nav-mobile-btn{display:block;}
+  .listing-card{flex-direction:column;}
+  .lc-actions{flex-direction:row;}
+  .search-bar{flex-direction:column;border-radius:12px;}
+  .search-bar select,.near-me-btn{border-left:none;border-top:1px solid var(--border);}
+  .near-me-btn{width:100%;justify-content:center;padding:12px;}
+  .search-bar button.search-btn{padding:13px;border-radius:0 0 12px 12px;}
+  .form-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .rating-summary{flex-direction:column;}
+  .inquiry-row{flex-direction:column;}
+}
+
+/* ── WEATHER WIDGET ── */
+.weather-widget-section{background:linear-gradient(135deg,#0e3d22 0%,#1a6b3c 60%,#1565c0 100%);padding:36px 20px;position:relative;overflow:hidden;}
+.weather-widget-section::before{content:'موسم';position:absolute;right:-10px;top:-10px;font-size:8rem;color:rgba(255,255,255,.04);pointer-events:none;line-height:1;}
+.ww-inner{max-width:1200px;margin:auto;}
+.ww-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px;}
+.ww-title{color:white;}
+.ww-title h2{font-size:1.4rem;font-weight:700;margin-bottom:2px;}
+.ww-title p{font-size:.78rem;color:rgba(255,255,255,.7);}
+.ww-link{background:rgba(255,255,255,.15);color:white;border:1px solid rgba(255,255,255,.3);padding:7px 16px;border-radius:8px;font-size:.76rem;font-weight:600;text-decoration:none;transition:all .2s;}
+.ww-link:hover{background:rgba(255,255,255,.25);}
+.ww-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+@media(max-width:700px){.ww-grid{grid-template-columns:1fr;}}
+.ww-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:18px;backdrop-filter:blur(8px);}
+.ww-city{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.7);margin-bottom:6px;}
+.ww-main{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.ww-icon{font-size:2.2rem;line-height:1;}
+.ww-temp{font-size:2.4rem;font-weight:800;color:white;line-height:1;}
+.ww-temp sup{font-size:1rem;font-weight:400;vertical-align:top;margin-top:4px;}
+.ww-desc{font-size:.82rem;color:rgba(255,255,255,.85);font-weight:500;text-transform:capitalize;margin-bottom:8px;}
+.ww-details{display:grid;grid-template-columns:1fr 1fr;gap:4px;}
+.ww-detail{font-size:.7rem;color:rgba(255,255,255,.65);display:flex;align-items:center;gap:4px;}
+.ww-detail span{color:rgba(255,255,255,.9);font-weight:600;}
+.ww-loading{text-align:center;color:rgba(255,255,255,.7);font-size:.85rem;padding:20px;animation:pulse 1.5s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+.ww-error{background:rgba(255,255,255,.1);border-radius:10px;padding:14px;text-align:center;color:rgba(255,255,255,.8);font-size:.82rem;}
+.ww-forecast{margin-top:14px;display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+@media(max-width:500px){.ww-forecast{grid-template-columns:repeat(4,1fr);}}
+.ww-fc-day{background:rgba(255,255,255,.1);border-radius:9px;padding:8px 4px;text-align:center;}
+.ww-fc-day-name{font-size:.62rem;color:rgba(255,255,255,.65);font-weight:600;text-transform:uppercase;margin-bottom:3px;}
+.ww-fc-icon{font-size:1.1rem;margin-bottom:3px;}
+.ww-fc-hi{font-size:.78rem;font-weight:700;color:white;}
+.ww-fc-lo{font-size:.68rem;color:rgba(255,255,255,.55);}
+.ww-updated{text-align:right;font-size:.65rem;color:rgba(255,255,255,.45);margin-top:10px;}
+
+</style>
+</head>
+<body>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="claimModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('claimModal')">✕</button>
+    <h3>🏢 Claim This Business</h3>
+    <p>Are you the owner of this business? Claim it to update your listing, respond to reviews, and get a Verified badge.</p>
+    <input class="fi" type="text" placeholder="Your name" style="margin-bottom:8px;width:100%;">
+    <input class="fi" type="tel" placeholder="Your phone number (for verification)" style="margin-bottom:8px;width:100%;">
+    <button class="btn btn-blue btn-block" onclick="submitClaim()">Send Claim Request via WhatsApp</button>
+  </div>
+</div>
+<div class="modal-overlay" id="reportModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('reportModal')">✕</button>
+    <h3>🚩 Report This Listing</h3>
+    <p>Help us keep Apna Narowal accurate. Tell us what's wrong with this listing.</p>
+    <select class="fs" style="margin-bottom:8px;width:100%;">
+      <option>Wrong phone number</option>
+      <option>Business is closed / doesn't exist</option>
+      <option>Wrong address</option>
+      <option>Inappropriate content</option>
+      <option>Duplicate listing</option>
+    </select>
+    <textarea class="ft" placeholder="Additional details (optional)" style="height:70px;width:100%;margin-bottom:8px;"></textarea>
+    <button class="btn btn-red btn-block" onclick="submitReport()">Submit Report</button>
+  </div>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/923001234567" title="WhatsApp">💬</a>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>📍 Narowal District, Punjab, Pakistan — اپنا نارووال</span>
+  <span>✉️ <a href="mailto:apnanarowal@gmail.com">apnanarowal@gmail.com</a></span>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo" onclick="showPage('home')">
+      <div class="logo-icon">ن</div>
+      <div class="logo-text">
+        <span class="lt-main">Apna Narowal</span>
+        <span class="lt-sub">اپنا نارووال</span>
+      </div>
+    </div>
+    <ul class="nav-tabs" id="navTabs">
+      <li><a class="active" onclick="showPage('home')">Home</a></li>
+      <li><a href="shakargarh-directory.html">Shakargarh</a></li>
+      <li><a href="narowal-city-guide.html">Narowal</a></li>
+      <li><a href="zafarwal-directory.html">Zafarwal</a></li>
+      <li><a onclick="showPage('submit')">Submit Listing</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-cta" onclick="showPage('submit')">+ Add Listing</button>
+      <button class="nav-mobile-btn" onclick="document.getElementById('navTabs').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════
+     HOME PAGE
+     ════════════════════════════════════════════════ -->
+<div class="page-section active" id="page-home">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">Narowal's #1 Local Directory — اپنا نارووال</div>
+    <h1>Discover <em>Narowal</em><br>Like Never Before</h1>
+    <p>Find hospitals, schools, restaurants, government offices, and businesses across Narowal, Shakargarh & Zafarwal.</p>
+
+    <!-- SEARCH BAR -->
+    <div class="search-wrap">
+      <div class="search-bar">
+        <input type="text" id="heroSearch" placeholder="Search hospitals, schools, NADRA, shops…" autocomplete="off">
+        <select id="heroCat">
+          <option value="">All Categories</option>
+          <option value="Hospital">Hospitals</option>
+          <option value="School">Schools</option>
+          <option value="Restaurant">Restaurants</option>
+          <option value="Bank">Banks</option>
+          <option value="Pharmacy">Pharmacies</option>
+          <option value="Govt">Govt Offices</option>
+          <option value="Sports">Sports</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Stationery">Stationery</option>
+          <option value="Crockery">Crockery</option>
+          <option value="Shopping">Shopping Stores</option>
+          <option value="Cafe">Café</option>
+          <option value="AutoWorkshop">Auto Workshops</option>
+          <option value="MotorWorkshop">Motor Workshops</option>
+          <option value="Sanitary">Sanitary Shops</option>
+          <option value="Lawyer">Lawyers</option>
+          <option value="Electronics">Electronic Stores</option>
+          <option value="Mobile">Mobile Shops</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Cosmetics">Cosmetics & Skin Care</option>
+          <option value="Tailor">Tailors</option>
+          <option value="Barber">Barber Shops</option>
+          <option value="Laundry">Laundry</option>
+          <option value="CarWash">Car Wash</option>
+          <option value="PetrolPump">Petrol Pumps</option>
+          <option value="Park">Parks</option>
+          <option value="Ground">Grounds</option>
+          <option value="Travel">Travel Agencies</option>
+          <option value="Transport">Transport</option>
+          <option value="Meat">Meat Shops</option>
+        </select>
+        <button class="near-me-btn" id="nearMeBtn" onclick="findNearMe()">
+          <span class="nm-dot"></span>Near Me
+        </button>
+        <button class="search-btn" onclick="doSearch()">🔍 Search</button>
+      </div>
+      <!-- LIVE DROPDOWN -->
+      <div class="search-dropdown" id="searchDrop">
+        <div class="sd-header"><span id="sdHeaderTxt">Results</span><span id="sdCount"></span></div>
+        <div id="sdItems"></div>
+      </div>
+    </div>
+
+    <!-- TRENDING -->
+    <div class="trending-bar">
+      <span class="trending-label">🔥 Trending:</span>
+      <span class="trending-chip" onclick="quickSearch('NADRA Narowal')">NADRA Narowal</span>
+      <span class="trending-chip" onclick="quickSearch('24 hour hospital')">24hr Hospital</span>
+      <span class="trending-chip" onclick="quickSearch('restaurant')">Restaurants</span>
+      <span class="trending-chip" onclick="showListings('Govt')">Govt Offices</span>
+      <span class="trending-chip" onclick="quickSearch('Ali Garments')">Ali Garments</span>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>40+</strong><span>Listings</span></div>
+      <div class="hero-stat"><strong>10</strong><span>Categories</span></div>
+      <div class="hero-stat"><strong>3</strong><span>Tehsils</span></div>
+      <div class="hero-stat"><strong>50K+</strong><span>Monthly Visitors</span></div>
+    </div>
+  </div>
+
+  <!-- NEAR ME PANEL -->
+  <div class="nearme-panel" id="nearMePanel">
+    <div class="nearme-top container">
+      <div>
+        <div class="section-label">GPS Location</div>
+        <h2 class="stitle">Businesses <em>Near You</em></h2>
+        <p class="sintro" id="nearMeSub" style="margin:0;"></p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;">
+        <div class="location-pill" id="locPill">Detecting…</div>
+        <button class="btn btn-outline btn-sm" onclick="clearNearMe()">✕ Clear</button>
+      </div>
+    </div>
+    <div class="loc-err" id="locErr"><h3>📍 Location Denied</h3><p id="locErrMsg">Please allow location access to use Near Me.</p></div>
+    <div class="nearme-grid container" id="nearMeGrid"></div>
+  </div>
+
+  <!-- SEARCH RESULTS PAGE -->
+  <div class="search-results-page" id="srPage">
+    <div class="container">
+      <div style="margin-bottom:20px;">
+        <div class="section-label">Search Results</div>
+        <h2 class="stitle" id="srTitle">Results</h2>
+        <p class="sintro" id="srSub" style="margin:0;"></p>
+      </div>
+      <div class="sr-grid" id="srGrid"></div>
+      <div id="srEmpty" style="display:none;text-align:center;padding:48px;color:var(--muted);">
+        <div style="font-size:3rem;margin-bottom:12px;">🔍</div>
+        <div style="font-weight:700;margin-bottom:6px;">No results found</div>
+        <div style="font-size:.86rem;">Try different keywords or browse categories below.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT NAROWAL -->
+  <section style="background:var(--cream,#faf7f0);padding:52px 20px;">
+    <div class="container" style="max-width:1100px;">
+      <div class="section-label">Welcome To</div>
+      <h2 class="stitle">About <em>Narowal</em> District</h2>
+      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:start;margin-top:20px;">
+        <div>
+          <p style="font-size:.92rem;line-height:1.85;color:#2c2c2a;margin-bottom:14px;">Narowal (نارووال) is a district in the Punjab province of Pakistan, bordered by the Ravi River and India to the east, Sialkot to the north, and Gujranwala to the south. Created as a separate district in 1991 out of Sialkot District, Narowal is home to over 1.9 million people across its three tehsils — <strong>Narowal, Shakargarh, and Zafarwal</strong>.</p>
+          <p style="font-size:.92rem;line-height:1.85;color:#2c2c2a;margin-bottom:14px;">The district is best known internationally as home to the <strong>Kartarpur Corridor</strong>, connecting Pakistan and India for Sikh pilgrims visiting Gurdwara Darbar Sahib — the final resting place of Guru Nanak, founder of Sikhism. Narowal is also a significant centre for the sports goods and sublimation garment industry, with strong trade links to nearby Sialkot.</p>
+          <p style="font-size:.92rem;line-height:1.85;color:#2c2c2a;">Agriculturally rich and steadily urbanising, Narowal district blends a deep historical legacy — including Shakargarh's unique Partition-era history as the only tehsil of Gurdaspur awarded to Pakistan — with a growing local economy in manufacturing, education and small business. Apna Narowal exists to help this community find what it needs, from hospitals and schools to shops and services, all in one place.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div style="background:white;border:1.5px solid #e2ddd4;border-radius:13px;padding:16px;text-align:center;">
+            <div style="font-size:1.4rem;margin-bottom:4px;">👥</div>
+            <div style="font-size:1rem;font-weight:800;color:#1a3a6b;">1.9M+</div>
+            <div style="font-size:.68rem;color:#6b6b60;text-transform:uppercase;letter-spacing:.06em;">Population</div>
+          </div>
+          <div style="background:white;border:1.5px solid #e2ddd4;border-radius:13px;padding:16px;text-align:center;">
+            <div style="font-size:1.4rem;margin-bottom:4px;">🏙️</div>
+            <div style="font-size:1rem;font-weight:800;color:#1a3a6b;">3</div>
+            <div style="font-size:.68rem;color:#6b6b60;text-transform:uppercase;letter-spacing:.06em;">Tehsils</div>
+          </div>
+          <div style="background:white;border:1.5px solid #e2ddd4;border-radius:13px;padding:16px;text-align:center;">
+            <div style="font-size:1.4rem;margin-bottom:4px;">🛕</div>
+            <div style="font-size:.82rem;font-weight:800;color:#1a3a6b;">Kartarpur</div>
+            <div style="font-size:.68rem;color:#6b6b60;text-transform:uppercase;letter-spacing:.06em;">Corridor</div>
+          </div>
+          <div style="background:white;border:1.5px solid #e2ddd4;border-radius:13px;padding:16px;text-align:center;">
+            <div style="font-size:1.4rem;margin-bottom:4px;">📅</div>
+            <div style="font-size:1rem;font-weight:800;color:#1a3a6b;">1991</div>
+            <div style="font-size:.68rem;color:#6b6b60;text-transform:uppercase;letter-spacing:.06em;">District Est.</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;">
+        <a href="narowal-city-guide.html" style="background:#1a3a6b;color:white;padding:10px 20px;border-radius:9px;font-size:.85rem;font-weight:700;text-decoration:none;">Narowal City Guide →</a>
+        <a href="shakargarh-directory.html" style="background:white;color:#1a3a6b;border:1.5px solid #e2ddd4;padding:10px 20px;border-radius:9px;font-size:.85rem;font-weight:700;text-decoration:none;">Shakargarh Guide →</a>
+        <a href="zafarwal-directory.html" style="background:white;color:#1a3a6b;border:1.5px solid #e2ddd4;padding:10px 20px;border-radius:9px;font-size:.85rem;font-weight:700;text-decoration:none;">Zafarwal Guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section style="background:var(--white);padding:52px 20px;">
+    <div class="container">
+      <div class="section-label">Browse by Category</div>
+      <h2 class="stitle">Complete <em>Narowal</em> Directory</h2>
+      <p class="sintro">From healthcare to government offices, food to finance — everything in one place.</p>
+      <div class="cat-grid">
+        <div class="cat-card hot" onclick="showListings('Hospital')"><span class="cat-icon">🏥</span><div class="cat-name">Hospitals</div><div class="cat-count">8 listings</div></div>
+        <div class="cat-card" onclick="showListings('School')"><span class="cat-icon">🏫</span><div class="cat-name">Schools</div><div class="cat-count">4 listings</div></div>
+        <div class="cat-card" onclick="showListings('Restaurant')"><span class="cat-icon">🍽️</span><div class="cat-name">Restaurants</div><div class="cat-count">5 listings</div></div>
+        <div class="cat-card" onclick="showListings('Bank')"><span class="cat-icon">🏦</span><div class="cat-name">Banks</div><div class="cat-count">2 listings</div></div>
+        <div class="cat-card" onclick="showListings('Pharmacy')"><span class="cat-icon">💊</span><div class="cat-name">Pharmacies</div><div class="cat-count">3 listings</div></div>
+        <div class="cat-card hot" onclick="showListings('Govt')"><span class="cat-icon">🏛️</span><div class="cat-name">Govt Offices</div><div class="cat-count">10 listings</div></div>
+        <div class="cat-card" onclick="showListings('Sports')"><span class="cat-icon">⚽</span><div class="cat-name">Sports Shops</div><div class="cat-count">2 listings</div></div>
+        <div class="cat-card" onclick="showListings('Clothing')"><span class="cat-icon">👗</span><div class="cat-name">Clothing</div><div class="cat-count">1 listing</div></div>
+        <div class="cat-card" onclick="showListings('Stationery')"><span class="cat-icon">📚</span><div class="cat-name">Stationery</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Crockery')"><span class="cat-icon">🍽️</span><div class="cat-name">Crockery</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Shopping')"><span class="cat-icon">🛍️</span><div class="cat-name">Shopping Stores</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Cafe')"><span class="cat-icon">☕</span><div class="cat-name">Café</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('AutoWorkshop')"><span class="cat-icon">🔧</span><div class="cat-name">Auto Workshops</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('MotorWorkshop')"><span class="cat-icon">🏍️</span><div class="cat-name">Motor Workshops</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Sanitary')"><span class="cat-icon">🚿</span><div class="cat-name">Sanitary Shops</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Lawyer')"><span class="cat-icon">⚖️</span><div class="cat-name">Lawyers</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Electronics')"><span class="cat-icon">📺</span><div class="cat-name">Electronic Stores</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Mobile')"><span class="cat-icon">📱</span><div class="cat-name">Mobile Shops</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Furniture')"><span class="cat-icon">🛋️</span><div class="cat-name">Furniture</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Cosmetics')"><span class="cat-icon">💄</span><div class="cat-name">Cosmetics & Skin Care</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Tailor')"><span class="cat-icon">🧵</span><div class="cat-name">Tailors</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Barber')"><span class="cat-icon">💈</span><div class="cat-name">Barber Shops</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Laundry')"><span class="cat-icon">🧺</span><div class="cat-name">Laundry</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('CarWash')"><span class="cat-icon">🚗</span><div class="cat-name">Car Wash</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('PetrolPump')"><span class="cat-icon">⛽</span><div class="cat-name">Petrol Pumps</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Park')"><span class="cat-icon">🌳</span><div class="cat-name">Parks</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Ground')"><span class="cat-icon">🏟️</span><div class="cat-name">Grounds</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Travel')"><span class="cat-icon">✈️</span><div class="cat-name">Travel Agencies</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Transport')"><span class="cat-icon">🚌</span><div class="cat-name">Transport</div><div class="cat-count">0 listings</div></div>
+        <div class="cat-card" onclick="showListings('Meat')"><span class="cat-icon">🥩</span><div class="cat-name">Meat Shops</div><div class="cat-count">0 listings</div></div>
+      </div>
+      <div class="tags" style="margin-top:20px;">
+        <span class="tag" onclick="quickSearch('NADRA')">NADRA Office</span>
+        <span class="tag" onclick="quickSearch('railway')">Railway Station</span>
+        <span class="tag" onclick="quickSearch('court')">Courts</span>
+        <span class="tag" onclick="showListings('Hospital')">24-Hour Hospitals</span>
+        <span class="tag" onclick="filterByArea('Shakargarh')">Shakargarh</span>
+        <span class="tag" onclick="filterByArea('Zafarwal')">Zafarwal</span>
+        <span class="tag" onclick="showPage('submit')">Submit Listing</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- /home -->
+
+<!-- ════════════════════════════════════════════════
+     LISTINGS PAGE
+     ════════════════════════════════════════════════ -->
+<div class="page-section" id="page-listings">
+  <div class="listings-hero" id="listingsHero" data-urdu="ہسپتال">
+    <div class="listings-hero-inner">
+      <div class="hero-badge" id="listingsBadge">Healthcare</div>
+      <h1 id="listingsTitle">Hospitals in <em>Narowal</em></h1>
+      <p id="listingsIntro">Complete list with verified contact numbers, addresses, and reviews.</p>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-wrap">
+    <div class="filter-bar">
+      <span class="filter-label">Area:</span>
+      <button class="filter-chip active" onclick="filterByArea('all',this)">All Areas</button>
+      <button class="filter-chip" onclick="filterByArea('Narowal',this)">Narowal City</button>
+      <button class="filter-chip" onclick="filterByArea('Shakargarh',this)">Shakargarh</button>
+      <button class="filter-chip" onclick="filterByArea('Zafarwal',this)">Zafarwal</button>
+      <select class="filter-sort" id="sortSelect" onchange="renderListings()">
+        <option value="default">Sort: Recommended</option>
+        <option value="rating">Rating: High to Low</option>
+        <option value="name">Name: A–Z</option>
+        <option value="newest">Newest First</option>
+      </select>
+      <span class="filter-count" id="listingsCount"></span>
+    </div>
+  </div>
+
+  <!-- LISTINGS LAYOUT -->
+  <div class="listings-layout">
+    <!-- MAIN -->
+    <div>
+      <div id="listingsGrid"></div>
+      <div class="ad-slot">📢 Feature your business here — reach 50,000+ monthly visitors &nbsp;|&nbsp; <a onclick="showPage('submit')">Get Featured →</a></div>
+      <div class="load-more-wrap">
+        <button class="btn btn-outline btn-lg" id="loadMoreBtn" onclick="loadMore()">Load More ↓</button>
+      </div>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="listings-sidebar">
+      <div class="sidebar-sticky-inner">
+        <div class="sw-box">
+          <div class="sw-title">🚨 Emergency Numbers</div>
+          <ul class="sw-list">
+            <li><span>Rescue 1122</span><a href="tel:1122" style="color:var(--red);font-weight:700;font-size:1rem;">1122</a></li>
+            <li><span>Police</span><a href="tel:15" style="color:var(--red);font-weight:700;">15</a></li>
+            <li><span>Edhi</span><a href="tel:115" style="color:var(--green);font-weight:700;">115</a></li>
+            <li><span>DHQ Emergency</span><a href="tel:0542412345" style="color:var(--green);font-weight:700;">0542-412345</a></li>
+          </ul>
+        </div>
+        <div class="sw-box">
+          <div class="sw-title">📂 Other Categories</div>
+          <ul class="sw-list">
+            <li><a onclick="showListings('Hospital')">Hospitals →</a></li>
+            <li><a onclick="showListings('School')">Schools →</a></li>
+            <li><a onclick="showListings('Restaurant')">Restaurants →</a></li>
+            <li><a onclick="showListings('Govt')">Govt Offices →</a></li>
+            <li><a onclick="showListings('Pharmacy')">Pharmacies →</a></li>
+            <li><a onclick="showListings('Clothing')">Clothing →</a></li>
+          </ul>
+        </div>
+        <div class="sw-box" style="background:var(--green);border-color:transparent;">
+          <div class="sw-title" style="color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.15);">List Your Business</div>
+          <p style="font-size:.8rem;color:rgba(255,255,255,.8);margin-bottom:12px;line-height:1.6;">Reach thousands monthly. Free & paid options.</p>
+          <button class="btn btn-gold btn-block" onclick="showPage('submit')">Submit Listing</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /listings -->
+
+<!-- ════════════════════════════════════════════════
+     DETAIL PAGE
+     ════════════════════════════════════════════════ -->
+<div class="page-section" id="page-detail">
+  <div class="detail-breadcrumb">
+    <a onclick="showPage('home')">Home</a><span>›</span>
+    <a id="crumbCat" onclick="showListings(currentDetailCat)">Category</a><span>›</span>
+    <span id="crumbName">Business Name</span>
+  </div>
+  <div class="detail-body">
+    <div class="detail-grid">
+      <!-- MAIN -->
+      <div>
+        <div class="detail-logo" id="dIcon">🏥</div>
+        <h1 class="detail-title" id="dName">Business Name</h1>
+        <div class="detail-addr" id="dAddr">📍 Address</div>
+        <div class="detail-badges" id="dBadges"></div>
+        <div class="detail-cta" id="dCta"></div>
+
+        <!-- CLICK TRACKING STATS -->
+        <div style="display:flex;gap:16px;margin-bottom:18px;flex-wrap:wrap;" id="dStats"></div>
+
+        <div class="info-grid" id="dInfo"></div>
+
+        <!-- MAP -->
+        <div class="map-embed">
+          <div style="font-size:2.5rem;">🗺️</div>
+          <div style="font-weight:600;color:var(--text);font-size:.88rem;" id="dMapName">Location</div>
+          <div style="font-size:.74rem;color:var(--muted);" id="dMapAddr"></div>
+          <a id="dMapLink" href="#" target="_blank" class="btn btn-outline btn-sm" style="margin-top:6px;">Open in Google Maps</a>
+        </div>
+
+        <!-- HOURS -->
+        <div style="margin-bottom:22px;">
+          <h3 style="font-family:'Amiri',serif;font-size:1.2rem;color:var(--dark);margin-bottom:10px;">Opening Hours</h3>
+          <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;">
+            <table class="hours-table" id="dHours"></table>
+          </div>
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div style="margin-bottom:22px;">
+          <h3 style="font-family:'Amiri',serif;font-size:1.2rem;color:var(--dark);margin-bottom:10px;">About This Business</h3>
+          <p style="font-size:.88rem;color:var(--muted);line-height:1.8;" id="dDesc"></p>
+        </div>
+
+        <!-- CLAIM + REPORT -->
+        <div class="action-strip">
+          <span class="action-strip-label">Owner?</span>
+          <button class="claim-btn" onclick="openModal('claimModal')">🏢 Claim This Listing</button>
+          <span class="action-strip-label" style="margin-left:8px;">Problem?</span>
+          <button class="report-btn" onclick="openModal('reportModal')">🚩 Report</button>
+        </div>
+
+        <!-- INQUIRY / GET QUOTE -->
+        <div class="inquiry-box">
+          <h4>💬 Send an Inquiry</h4>
+          <p>Get a quick response via WhatsApp — no forms, no waiting.</p>
+          <input class="inquiry-input" type="text" id="inquiryMsg" placeholder="Your message (e.g. What are your fees? Are you open today?)">
+          <div class="inquiry-row">
+            <button class="btn btn-wa btn-lg" style="flex:1;" onclick="sendInquiry()">💬 Send via WhatsApp</button>
+            <button class="btn btn-gold btn-lg" id="dCallBtn2">📞 Call Now</button>
+          </div>
+        </div>
+
+        <!-- REVIEWS SECTION -->
+        <div class="reviews-section" id="reviewsSection">
+          <div class="reviews-header">
+            <h3>Customer Reviews</h3>
+            <button class="btn btn-outline btn-sm" onclick="document.getElementById('writeReviewForm').scrollIntoView({behavior:'smooth'})">Write a Review</button>
+          </div>
+          <div class="rating-summary" id="ratingSummary"></div>
+          <div id="reviewsList"></div>
+          <!-- WRITE REVIEW -->
+          <div class="write-review" id="writeReviewForm">
+            <h4>⭐ Write Your Review</h4>
+            <div style="margin-bottom:10px;font-size:.8rem;color:var(--muted);">Your rating:</div>
+            <div class="star-picker" id="starPicker">
+              <span class="star-pick" data-val="1" onclick="pickStar(1)">☆</span>
+              <span class="star-pick" data-val="2" onclick="pickStar(2)">☆</span>
+              <span class="star-pick" data-val="3" onclick="pickStar(3)">☆</span>
+              <span class="star-pick" data-val="4" onclick="pickStar(4)">☆</span>
+              <span class="star-pick" data-val="5" onclick="pickStar(5)">☆</span>
+            </div>
+            <input class="fi" type="text" id="reviewName" placeholder="Your name" style="width:100%;margin-bottom:8px;">
+            <textarea class="review-input" id="reviewText" placeholder="Share your experience with this business…"></textarea>
+            <button class="btn btn-green" onclick="submitReview()">Submit Review</button>
+          </div>
+        </div>
+
+        <!-- RELATED -->
+        <div style="margin-top:28px;">
+          <h3 style="font-family:'Amiri',serif;font-size:1.2rem;color:var(--dark);margin-bottom:12px;">Similar Businesses</h3>
+          <div class="related-grid" id="relatedGrid"></div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div>
+        <div style="position:sticky;top:80px;display:flex;flex-direction:column;gap:14px;">
+          <div class="sw-box" style="background:var(--green);border-color:transparent;">
+            <div class="sw-title" style="color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.15);">Contact</div>
+            <a class="btn btn-gold btn-block" id="sideCall" href="#" style="margin-bottom:8px;">📞 Call Now</a>
+            <a class="btn btn-wa btn-block" id="sideWa" href="#">💬 WhatsApp</a>
+          </div>
+          <div class="sw-box">
+            <div class="sw-title">Quick Info</div>
+            <ul class="sw-list" id="sideInfo"></ul>
+          </div>
+          <div class="sw-box">
+            <div class="sw-title">Emergency Numbers</div>
+            <ul class="sw-list">
+              <li><span>Rescue</span><a href="tel:1122" style="color:var(--red);font-weight:700;">1122</a></li>
+              <li><span>Police</span><a href="tel:15" style="color:var(--red);font-weight:700;">15</a></li>
+              <li><span>Edhi</span><a href="tel:115" style="color:var(--green);font-weight:700;">115</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /detail -->
+
+<!-- ════════════════════════════════════════════════
+     SUBMIT PAGE
+     ════════════════════════════════════════════════ -->
+<div class="page-section" id="page-submit">
+  <div class="submit-page">
+    <div class="submit-wrap">
+      <div class="submit-hero">
+        <span class="sh-icon">📋</span>
+        <div class="section-label">Join Apna Narowal</div>
+        <h1 style="font-family:'Amiri',serif;font-size:2rem;color:var(--dark);margin-bottom:8px;">Submit Your Business</h1>
+        <p style="color:var(--muted);font-size:.9rem;max-width:420px;margin:0 auto;text-align:center;line-height:1.7;">Reach 50,000+ monthly visitors from Narowal, Shakargarh, and Zafarwal. Free and paid options available.</p>
+      </div>
+
+      <div class="form-card">
+        <div class="submit-success" id="submitSuccess">
+          <div class="success-icon-wrap">✅</div>
+          <h2 style="font-family:'Amiri',serif;font-size:1.6rem;margin-bottom:8px;">Listing Submitted!</h2>
+          <p style="color:var(--muted);font-size:.88rem;max-width:340px;line-height:1.7;">We will review and publish your listing within 24–48 hours. You will be contacted on WhatsApp once it is live.</p>
+          <button class="btn btn-green" style="margin-top:18px;" onclick="resetForm()">Submit Another</button>
+        </div>
+        <div id="formBody">
+          <!-- PRICING TIERS -->
+          <div style="margin-bottom:20px;">
+            <div style="font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:12px;">Choose Your Plan</div>
+            <div class="pricing-grid">
+              <div class="price-tier" onclick="selectTier(this,'free')">
+                <div class="pt-name">Free</div>
+                <div class="pt-price">PKR 0<span>/mo</span></div>
+                <div class="pt-features">Basic listing<br>Name & phone<br>Address only</div>
+              </div>
+              <div class="price-tier recommended selected" onclick="selectTier(this,'standard')">
+                <div class="pt-name">Standard</div>
+                <div class="pt-price">PKR 500<span>/mo</span></div>
+                <div class="pt-features">Verified badge<br>WhatsApp button<br>Photos + reviews</div>
+              </div>
+              <div class="price-tier" onclick="selectTier(this,'featured')">
+                <div class="pt-name">Featured</div>
+                <div class="pt-price">PKR 1,500<span>/mo</span></div>
+                <div class="pt-features">⭐ Featured badge<br>Top of search<br>Priority support</div>
+              </div>
+            </div>
+            <input type="hidden" id="selectedTier" value="standard">
+          </div>
+
+          <div class="form-grid">
+            <div class="form-field full">
+              <label>Business Name <span class="req">*</span></label>
+              <input class="fi" id="fn" type="text" placeholder="e.g. Al Rehman Hospital Narowal">
+              <div class="ferr" id="err-fn">Business name is required.</div>
+            </div>
+            <div class="form-field">
+              <label>Category <span class="req">*</span></label>
+              <select class="fs" id="fc">
+                <option value="">-- Select --</option>
+                <option>Hospital / Clinic</option>
+                <option>School / College</option>
+                <option>Restaurant / Café</option>
+                <option>Bank / ATM</option>
+                <option>Pharmacy</option>
+                <option>Government Office</option>
+                <option>Sports Shop</option>
+                <option>Clothing / Fashion</option>
+                <option>Hotel / Guest House</option>
+                <option>Lawyer / Advocate</option>
+                <option>Real Estate</option>
+                <option>Transport</option>
+                <option>Stationery</option>
+                <option>Crockery</option>
+                <option>Shopping Store</option>
+                <option>Auto Workshop</option>
+                <option>Motor Workshop</option>
+                <option>Sanitary Shop</option>
+                <option>Electronic Store</option>
+                <option>Mobile Shop</option>
+                <option>Furniture</option>
+                <option>Cosmetics & Skin Care</option>
+                <option>Tailor</option>
+                <option>Barber Shop</option>
+                <option>Laundry</option>
+                <option>Car Wash</option>
+                <option>Petrol Pump</option>
+                <option>Park</option>
+                <option>Ground</option>
+                <option>Travel Agency</option>
+                <option>Meat Shop</option>
+                <option>Other</option>
+              </select>
+              <div class="ferr" id="err-fc">Please select a category.</div>
+            </div>
+            <div class="form-field">
+              <label>Area <span class="req">*</span></label>
+              <select class="fs" id="fa">
+                <option value="">-- Select --</option>
+                <option>Narowal City</option>
+                <option>Shakargarh</option>
+                <option>Zafarwal</option>
+                <option>Other in Narowal District</option>
+              </select>
+              <div class="ferr" id="err-fa">Please select an area.</div>
+            </div>
+            <div class="form-field">
+              <label>Phone Number <span class="req">*</span></label>
+              <input class="fi" id="fp" type="tel" placeholder="0300-1234567">
+              <div class="ferr" id="err-fp">Valid phone number required.</div>
+            </div>
+            <div class="form-field">
+              <label>WhatsApp Number</label>
+              <input class="fi" id="fw" type="tel" placeholder="0300-1234567 (if different)">
+            </div>
+            <div class="form-field full">
+              <label>Full Address <span class="req">*</span></label>
+              <input class="fi" id="fad" type="text" placeholder="e.g. GT Road, Near Chowk, Narowal">
+              <div class="ferr" id="err-fad">Address is required.</div>
+            </div>
+            <div class="form-field full">
+              <label>Business Description <span class="req">*</span></label>
+              <textarea class="ft" id="fd" placeholder="Describe your business, services, specialities, opening hours… (min 30 characters)"></textarea>
+              <div class="ferr" id="err-fd">Min 30 characters required.</div>
+            </div>
+            <div class="form-field full">
+              <label>Google Maps Link <span style="color:var(--muted);font-weight:400;">(optional — helps customers find you)</span></label>
+              <input class="fi" id="fmap" type="url" placeholder="https://maps.google.com/...">
+            </div>
+            <div class="form-field">
+              <label>Your Name</label>
+              <input class="fi" id="fcon" type="text" placeholder="Contact person name">
+            </div>
+          </div>
+
+          <button type="button" class="submit-btn" id="submitBtn" onclick="handleSubmit()">
+            <span id="submitTxt">📋 Submit Listing</span>
+          </button>
+          <p style="font-size:.7rem;color:var(--muted);text-align:center;margin-top:10px;">Free listings reviewed within 48 hours. Paid listings go live within 24 hours after payment confirmation via WhatsApp.</p>
+        </div>
+      </div>
+
+      <!-- Google Form Embed Option -->
+      <div style="text-align:center;margin-top:20px;padding:16px;background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);">
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:10px;">Prefer filling a Google Form instead?</p>
+        <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" class="btn btn-outline">Open Google Form →</a>
+      </div>
+    </div>
+  </div>
+</div><!-- /submit -->
+
+<!-- FOOTER -->
+
+<!-- WEATHER WIDGET -->
+<section style="background:linear-gradient(135deg,#0e3d22 0%,#1a6b3c 50%,#1565c0 100%);padding:36px 20px;overflow:hidden;">
+<div style="max-width:1200px;margin:auto;">
+
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px;">
+    <div>
+      <h2 style="color:white;font-size:1.5rem;font-weight:700;margin-bottom:4px;">🌤️ Narowal District Weather</h2>
+      <p style="color:rgba(255,255,255,.7);font-size:.8rem;">Live weather — Narowal, Shakargarh &amp; Zafarwal</p>
+    </div>
+    <a href="narowal-weather.html" style="background:rgba(255,255,255,.18);color:white;border:1px solid rgba(255,255,255,.3);padding:8px 18px;border-radius:8px;font-size:.78rem;font-weight:600;text-decoration:none;">Full Forecast →</a>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+    <div id="city-narowal"    style="background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:18px;min-height:120px;"></div>
+    <div id="city-shakargarh" style="background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:18px;min-height:120px;"></div>
+    <div id="city-zafarwal"   style="background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:18px;min-height:120px;"></div>
+  </div>
+
+  <div id="ww-forecast-section" style="display:none;margin-top:16px;">
+    <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.55);margin-bottom:8px;">7-Day Forecast — Narowal</div>
+    <div id="ww-7day" style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;"></div>
+  </div>
+
+  <div id="ww-updated" style="text-align:right;font-size:.62rem;color:rgba(255,255,255,.35);margin-top:10px;font-family:monospace;"></div>
+</div>
+</section>
+<!-- END WEATHER WIDGET -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-brand-name">Apna Narowal · اپنا نارووال</span>
+      <p>The most complete local directory for Narowal district, Punjab, Pakistan. Helping locals find what they need since 2024.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Directory</h5>
+      <ul>
+        <li><a onclick="showListings('Hospital')">Hospitals</a></li>
+        <li><a onclick="showListings('School')">Schools</a></li>
+        <li><a onclick="showListings('Restaurant')">Restaurants</a></li>
+        <li><a onclick="showListings('Govt')">Govt Offices</a></li>
+        <li><a onclick="showListings('Pharmacy')">Pharmacies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Areas</h5>
+      <ul>
+        <li><a href="narowal-city-guide.html">Narowal City</a></li>
+        <li><a href="shakargarh-directory.html">Shakargarh</a></li>
+        <li><a href="zafarwal-directory.html">Zafarwal</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a onclick="showPage('submit')">Submit Listing</a></li>
+        <li><a href="mailto:apnanarowal@gmail.com">Contact Us</a></li>
+        <li><a href="mailto:apnanarowal@gmail.com">Contact</a></li>
+        <li><a href="#">Advertise</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Apna Narowal. All rights reserved.</span>
+    <span>Made with ♥ for the people of Narowal</span>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════════════════════════
+     JAVASCRIPT — PRODUCTION v2.0
+     ════════════════════════════════════════════════════════════════ -->
+<script>
+'use strict';
+
+/* ═══ DATASET ═══════════════════════════════════════════════════ */
+const BUSINESSES = [
+  {id:1, name:'District Headquarters Hospital Narowal', cat:'Hospital', area:'Narowal', phone:'0542-412345', addr:'Hospital Road, Narowal City', desc:'Primary government referral hospital for all of Narowal district. Free 24-hour emergency, OPD, surgical, maternity, and paediatric services.', icon:'🏥', verified:true, featured:false, lat:32.1020, lng:74.8740, rating:4.1, reviews:134, hours:{open:'00:00',close:'24:00',allDay:true}, tags:['24hr','free','govt']},
+  {id:2, name:'Al Rehman Hospital Narowal', cat:'Hospital', area:'Narowal', phone:'0542-411111', addr:'GT Road, Near Narowal Chowk', desc:'Top-rated private hospital with 24-hour emergency, cardiology, orthopaedics, maternity ward, ICU, and in-house pharmacy.', icon:'🏥', verified:true, featured:true, lat:32.1035, lng:74.8760, rating:4.7, reviews:89, hours:{open:'00:00',close:'24:00',allDay:true}, tags:['24hr','icu','maternity']},
+  {id:3, name:'Medicare Hospital Narowal', cat:'Hospital', area:'Narowal', phone:'0542-415678', addr:'Allama Iqbal Road, Narowal', desc:'Multi-speciality private hospital with on-site lab, radiology, X-ray, and general medicine.', icon:'🏥', verified:true, featured:false, lat:32.1008, lng:74.8755, rating:4.2, reviews:52, hours:{open:'08:00',close:'22:00',allDay:false}, tags:['lab','xray']},
+  {id:4, name:'THQ Hospital Shakargarh', cat:'Hospital', area:'Shakargarh', phone:'0544-501234', addr:'Hospital Road, Shakargarh', desc:'Government Tehsil Headquarters Hospital — free 24-hour emergency, OPD, and maternity services.', icon:'🏥', verified:true, featured:false, lat:32.2675, lng:75.1595, rating:4.0, reviews:67, hours:{open:'00:00',close:'24:00',allDay:true}, tags:['24hr','free','govt']},
+  {id:5, name:'THQ Hospital Zafarwal', cat:'Hospital', area:'Zafarwal', phone:'0542-591000', addr:'Hospital Chowk, Zafarwal', desc:'Government hospital serving Zafarwal tehsil with free basic healthcare and 24-hour emergency.', icon:'🏥', verified:true, featured:false, lat:32.3452, lng:74.9010, rating:3.8, reviews:41, hours:{open:'00:00',close:'24:00',allDay:true}, tags:['24hr','free','govt']},
+  {id:6, name:'Ibn Sina Hospital Narowal', cat:'Hospital', area:'Narowal', phone:'0542-416789', addr:'Sialkot Road, Narowal', desc:'24-hour private hospital with experienced general practitioners and specialist doctors.', icon:'🏥', verified:false, featured:false, lat:32.0998, lng:74.8770, rating:4.0, reviews:38, hours:{open:'00:00',close:'24:00',allDay:true}, tags:['24hr']},
+  {id:7, name:'City Clinic Narowal', cat:'Hospital', area:'Narowal', phone:'0542-413456', addr:'Main Bazaar, Narowal City', desc:'Well-known general medicine and gynaecology clinic serving families since 2008.', icon:'🏥', verified:true, featured:false, lat:32.1005, lng:74.8748, rating:3.9, reviews:27, hours:{open:'08:00',close:'22:00',allDay:false}, tags:['gynaecology']},
+  {id:8, name:'Khalid Clinic Shakargarh', cat:'Hospital', area:'Shakargarh', phone:'0544-502345', addr:'Main Road, Shakargarh', desc:'Trusted family clinic in Shakargarh for general medicine and paediatric care.', icon:'🏥', verified:false, featured:false, lat:32.2660, lng:75.1610, rating:3.7, reviews:19, hours:{open:'09:00',close:'21:00',allDay:false}, tags:['paediatrics']},
+  {id:9, name:'Government Boys High School Narowal', cat:'School', area:'Narowal', phone:'0542-412001', addr:'School Road, Narowal City', desc:'Oldest government secondary school in Narowal city — free education from class 1 to matric.', icon:'🏫', verified:true, featured:false, lat:32.1015, lng:74.8730, rating:4.0, reviews:45, hours:{open:'07:30',close:'14:00',allDay:false}, tags:['free','govt','matric']},
+  {id:10, name:'The Educators Narowal', cat:'School', area:'Narowal', phone:'0542-413001', addr:'GT Road, Narowal', desc:'Private school offering Cambridge and matriculation programs from KG through FSc.', icon:'🏫', verified:true, featured:true, lat:32.1040, lng:74.8780, rating:4.5, reviews:88, hours:{open:'08:00',close:'14:30',allDay:false}, tags:['cambridge','private']},
+  {id:11, name:'Government High School Shakargarh', cat:'School', area:'Shakargarh', phone:'0544-503000', addr:'School Chowk, Shakargarh', desc:'Main government high school in Shakargarh — free matric-level education.', icon:'🏫', verified:true, featured:false, lat:32.2680, lng:75.1580, rating:3.9, reviews:32, hours:{open:'07:30',close:'14:00',allDay:false}, tags:['free','govt']},
+  {id:12, name:'Beacon House Narowal', cat:'School', area:'Narowal', phone:'0542-415001', addr:'Main Boulevard, Narowal', desc:'O and A Level education with experienced faculty and strong results.', icon:'🏫', verified:false, featured:false, lat:32.1000, lng:74.8765, rating:4.4, reviews:61, hours:{open:'08:00',close:'14:30',allDay:false}, tags:['o-level','a-level']},
+  {id:13, name:'Al Baik Restaurant Narowal', cat:'Restaurant', area:'Narowal', phone:'0542-411201', addr:'GT Road, Near Chowk Narowal', desc:'Popular desi restaurant on GT Road famous for karahi, BBQ, and fresh naan.', icon:'🍽️', verified:true, featured:true, lat:32.1030, lng:74.8755, rating:4.3, reviews:112, hours:{open:'11:00',close:'24:00',allDay:false}, tags:['karahi','bbq','desi']},
+  {id:14, name:'Punjab Darbar Narowal', cat:'Restaurant', area:'Narowal', phone:'0542-412800', addr:'Main Bazaar, Narowal City', desc:"Traditional Punjabi food — daal, sabzi, lassi, and chapatti. Most affordable desi food in Narowal.", icon:'🍽️', verified:false, featured:false, lat:32.1010, lng:74.8742, rating:4.0, reviews:78, hours:{open:'07:00',close:'23:00',allDay:false}, tags:['cheap','desi','traditional']},
+  {id:15, name:'Family Restaurant Shakargarh', cat:'Restaurant', area:'Shakargarh', phone:'0544-504200', addr:'Main Chowk, Shakargarh', desc:'Family restaurant in Shakargarh serving desi food, biryani, and fresh juices.', icon:'🍽️', verified:true, featured:false, lat:32.2665, lng:75.1600, rating:4.1, reviews:44, hours:{open:'10:00',close:'23:00',allDay:false}, tags:['family','biryani']},
+  {id:16, name:'Royal Biryani Narowal', cat:'Restaurant', area:'Narowal', phone:'0542-416700', addr:'Station Road, Narowal', desc:"Narowal's go-to biryani spot — aromatic Sindhi and Lahori biryani served fresh daily.", icon:'🍽️', verified:false, featured:false, lat:32.1022, lng:74.8720, rating:4.2, reviews:66, hours:{open:'11:00',close:'23:00',allDay:false}, tags:['biryani','takeaway']},
+  {id:17, name:'Zafarwal Food Point', cat:'Restaurant', area:'Zafarwal', phone:'0542-594001', addr:'GT Road, Zafarwal', desc:'Affordable fast food and desi meals in Zafarwal — burgers, rice, and fresh juices.', icon:'🍽️', verified:false, featured:false, lat:32.3445, lng:74.9000, rating:3.8, reviews:22, hours:{open:'09:00',close:'23:00',allDay:false}, tags:['fast-food','cheap']},
+  {id:18, name:'HBL Bank Narowal', cat:'Bank', area:'Narowal', phone:'0542-412500', addr:'GT Road, Narowal City', desc:'Full-service HBL branch — savings, loans, remittances, and 24-hour ATM.', icon:'🏦', verified:true, featured:false, lat:32.1025, lng:74.8758, rating:3.8, reviews:29, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['atm','24hr-atm','hbl']},
+  {id:19, name:'UBL Bank Shakargarh', cat:'Bank', area:'Shakargarh', phone:'0544-505001', addr:'Main Chowk, Shakargarh', desc:'UBL branch with ATM and mobile banking services for Shakargarh community.', icon:'🏦', verified:true, featured:false, lat:32.2672, lng:75.1592, rating:3.7, reviews:18, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['atm','ubl']},
+  {id:20, name:'City Pharmacy Narowal', cat:'Pharmacy', area:'Narowal', phone:'0542-412600', addr:'Main Bazaar, Narowal City', desc:'Most stocked pharmacy in Narowal — prescription medicines, OTC drugs, vitamins.', icon:'💊', verified:true, featured:false, lat:32.1012, lng:74.8745, rating:4.1, reviews:53, hours:{open:'08:00',close:'22:00',allDay:false}, tags:['medicines','vitamins']},
+  {id:21, name:'24 Hour Pharmacy Narowal', cat:'Pharmacy', area:'Narowal', phone:'0542-418200', addr:'Near DHQ Hospital, Narowal', desc:'Round-the-clock pharmacy next to DHQ Hospital — emergency medicine dispensing.', icon:'💊', verified:true, featured:true, lat:32.1018, lng:74.8738, rating:4.3, reviews:76, hours:{open:'00:00',close:'24:00',allDay:true}, tags:['24hr','emergency']},
+  {id:22, name:'Champion Sports Narowal', cat:'Sports', area:'Narowal', phone:'0542-413100', addr:'GT Road, Narowal City', desc:"Narowal's most stocked sports shop — cricket, football, badminton, and athletics.", icon:'⚽', verified:true, featured:false, lat:32.1038, lng:74.8775, rating:4.2, reviews:38, hours:{open:'09:00',close:'21:00',allDay:false}, tags:['cricket','football']},
+  {id:23, name:'Al Kareem Jersey Makers', cat:'Sports', area:'Narowal', phone:'0542-415300', addr:'Stadium Road, Narowal', desc:'Custom-printed jerseys for football, cricket, and kabaddi teams. Bulk orders.', icon:'⚽', verified:false, featured:false, lat:32.1002, lng:74.8730, rating:4.0, reviews:24, hours:{open:'09:00',close:'21:00',allDay:false}, tags:['jerseys','custom','bulk']},
+  {id:24, name:'Medicare Pharmacy Shakargarh', cat:'Pharmacy', area:'Shakargarh', phone:'0544-506500', addr:'Main Road, Shakargarh', desc:'Pharmacy in Shakargarh with prescription and over-the-counter medicines.', icon:'💊', verified:false, featured:false, lat:32.2678, lng:75.1605, rating:3.9, reviews:21, hours:{open:'08:00',close:'22:00',allDay:false}, tags:['medicines']},
+  {id:25, name:'Ali Garments Shakargarh', cat:'Clothing', area:'Shakargarh', phone:'0300-1717156', addr:'Back Side Noor Masjid, Near Madina Crockery, Shakargarh 51800', desc:"Women's ready-to-wear dresses and Pakistani suits. Specialising in ladies' fashion and Pakistani dress designs. WhatsApp orders welcome.", icon:'👗', verified:true, featured:false, lat:32.2670, lng:75.1598, rating:4.5, reviews:12, hours:{open:'09:00',close:'20:00',allDay:false}, tags:['women','dresses','ladies']},
+  // GOVT OFFICES
+  {id:26, name:'NADRA Office Narowal', cat:'Govt', area:'Narowal', phone:'0542-411050', addr:'Civil Lines, Near DC Office, Narowal', desc:'NADRA office for Narowal — CNIC, CNIC renewal, B-Form, Family Registration Certificate, NICOP applications and services.', icon:'🪪', verified:true, featured:false, lat:32.1018, lng:74.8752, rating:3.5, reviews:88, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['cnic','b-form','nadra','govt']},
+  {id:27, name:'NADRA Office Shakargarh', cat:'Govt', area:'Shakargarh', phone:'0544-500120', addr:'Main Road, Near Tehsil Office, Shakargarh', desc:'NADRA facilitation centre in Shakargarh for CNIC, B-Form, and family registration services.', icon:'🪪', verified:true, featured:false, lat:32.2662, lng:75.1588, rating:3.4, reviews:45, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['cnic','nadra','govt']},
+  {id:28, name:'District Courts Narowal', cat:'Govt', area:'Narowal', phone:'0542-412200', addr:'Court Road, Narowal City', desc:'District and Sessions Court Narowal — civil, criminal, and family courts. Judicial services for Narowal district.', icon:'⚖️', verified:true, featured:false, lat:32.1022, lng:74.8735, rating:3.6, reviews:34, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['court','justice','legal','govt']},
+  {id:29, name:'Civil Court Shakargarh', cat:'Govt', area:'Shakargarh', phone:'0544-500200', addr:'Near Tehsil HQ, Shakargarh', desc:'Civil and judicial court for Shakargarh tehsil — civil disputes, family cases, and local legal matters.', icon:'⚖️', verified:false, featured:false, lat:32.2658, lng:75.1582, rating:3.5, reviews:18, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['court','justice','govt']},
+  {id:30, name:'Narowal Railway Station', cat:'Govt', area:'Narowal', phone:'0542-410011', addr:'Railway Road, Narowal City', desc:'Narowal Railway Station on the Lahore–Sialkot–Narowal line. Trains to Lahore, Sialkot, Gujranwala. Ticket booking available.', icon:'🚂', verified:true, featured:false, lat:32.1028, lng:74.8715, rating:3.8, reviews:102, hours:{open:'06:00',close:'22:00',allDay:false}, tags:['train','lahore','railway','transport']},
+  {id:31, name:'Shakargarh Railway Station', cat:'Govt', area:'Shakargarh', phone:'0544-500300', addr:'Station Road, Shakargarh', desc:'Shakargarh Railway Station — passenger train services to Narowal, Lahore, and major cities via Pakistan Railways.', icon:'🚂', verified:true, featured:false, lat:32.2685, lng:75.1570, rating:3.7, reviews:58, hours:{open:'06:00',close:'22:00',allDay:false}, tags:['train','railway','transport']},
+  {id:32, name:'Deputy Commissioner Office Narowal', cat:'Govt', area:'Narowal', phone:'0542-412100', addr:'Civil Lines, DC Office Road, Narowal', desc:'Office of the Deputy Commissioner Narowal — domicile certificates, property matters, and district administrative services.', icon:'🏛️', verified:true, featured:false, lat:32.1015, lng:74.8748, rating:3.6, reviews:55, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['dc','domicile','admin','govt']},
+  {id:33, name:'TMA Narowal (Municipal)', cat:'Govt', area:'Narowal', phone:'0542-412300', addr:'TMA Office, Narowal City', desc:'Tehsil Municipal Administration — local development, sanitation, building permits, and municipal services.', icon:'🏛️', verified:true, featured:false, lat:32.1010, lng:74.8745, rating:3.4, reviews:28, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['permits','sanitation','municipal','govt']},
+  {id:34, name:'Tehsil Office Shakargarh', cat:'Govt', area:'Shakargarh', phone:'0544-500100', addr:'Tehsil HQ, Shakargarh', desc:'Tehsil headquarters for Shakargarh — local government services, revenue records, and municipal administration.', icon:'🏛️', verified:true, featured:false, lat:32.2660, lng:75.1590, rating:3.5, reviews:31, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['revenue','admin','govt']},
+  {id:35, name:'Tehsil Office Zafarwal', cat:'Govt', area:'Zafarwal', phone:'0542-590100', addr:'Tehsil Road, Zafarwal', desc:'Zafarwal tehsil office — local government services, revenue records, domicile, and administrative functions.', icon:'🏛️', verified:true, featured:false, lat:32.3448, lng:74.9005, rating:3.4, reviews:24, hours:{open:'09:00',close:'17:00',allDay:false}, tags:['domicile','admin','govt']},
+];
+
+/* ═══ REVIEWS STORE ═════════════════════════════════════════════ */
+let reviewsDB = JSON.parse(localStorage.getItem('an_reviews') || '{}');
+let favs = JSON.parse(localStorage.getItem('an_favs') || '[]');
+let clickStats = JSON.parse(localStorage.getItem('an_clicks') || '{}');
+let selectedStars = 0;
+let currentDetailId = null;
+let currentDetailCat = 'Hospital';
+let currentCatFilter = 'Hospital';
+let currentAreaFilter = 'all';
+let shownCount = 6;
+let userLat = null, userLng = null;
+let selectedTierVal = 'standard';
+
+/* ═══ SEO: DYNAMIC META TAGS ════════════════════════════════════ */
+const SEO = {
+  home:     { title:'Apna Narowal – Local Directory for Narowal, Punjab Pakistan', desc:'Find hospitals, schools, restaurants, government offices in Narowal district. Verified listings with contact numbers.' },
+  Hospital: { title:'Hospitals in Narowal – Contact Numbers & Reviews 2025', desc:'Complete list of 8 hospitals in Narowal, Shakargarh & Zafarwal with verified phone numbers, addresses, and patient reviews.' },
+  School:   { title:'Schools in Narowal – Best Schools with Contact & Fees 2025', desc:'Top schools in Narowal district including government and private. Addresses, contact numbers, and admission info.' },
+  Restaurant:{ title:'Restaurants in Narowal – Best Desi Food & Cafés 2025', desc:'Best restaurants in Narowal, Shakargarh & Zafarwal with menus, locations, and contact numbers.' },
+  Govt:     { title:'Government Offices in Narowal – NADRA, Courts, Railway 2025', desc:'All government offices in Narowal district — NADRA, courts, railway stations, DC office, tehsil offices with contact numbers.' },
+  Pharmacy: { title:'Pharmacies in Narowal – 24-Hour Medical Stores 2025', desc:'Pharmacies and medical stores in Narowal district with contact numbers. Includes 24-hour pharmacies.' },
+  Clothing: { title:'Clothing Shops in Narowal – Ladies Fashion & Dresses 2025', desc:"Women's clothing, Pakistani dresses, and fashion boutiques across Narowal district." },
+};
+
+function updateMeta(page) {
+  const s = SEO[page] || SEO.home;
+  document.getElementById('metaTitle').textContent = s.title;
+  document.getElementById('metaDesc').setAttribute('content', s.desc);
+  document.getElementById('ogTitle').setAttribute('content', s.title);
+  document.getElementById('ogDesc').setAttribute('content', s.desc);
+  document.title = s.title;
+}
+
+/* ═══ PAGE ROUTING ════════════════════════════════════════════  */
+function showPage(name) {
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.querySelectorAll('.nav-tabs a').forEach(a => a.classList.remove('active'));
+  document.getElementById('navTabs').classList.remove('open');
+  window.scrollTo({top:0, behavior:'smooth'});
+  if (name === 'home') updateMeta('home');
+}
+
+/* ═══ PART 1: LIVE SEARCH ════════════════════════════════════  */
+const heroSearch = document.getElementById('heroSearch');
+const heroCat    = document.getElementById('heroCat');
+const searchDrop = document.getElementById('searchDrop');
+
+heroSearch.addEventListener('input', liveSearch);
+heroCat.addEventListener('change', liveSearch);
+document.addEventListener('click', e => { if (!e.target.closest('.search-wrap')) closeDrop(); });
+
+function liveSearch() {
+  const q   = heroSearch.value.trim().toLowerCase();
+  const cat = heroCat.value;
+  if (!q && !cat) { closeDrop(); return; }
+  const res = BUSINESSES.filter(b => matchBusiness(b, q, cat)).slice(0,8);
+  renderDrop(res, q, cat);
+}
+
+function matchBusiness(b, q, cat) {
+  const mQ = !q || b.name.toLowerCase().includes(q) || b.addr.toLowerCase().includes(q)
+           || b.area.toLowerCase().includes(q) || b.desc.toLowerCase().includes(q)
+           || (b.tags && b.tags.some(t => t.includes(q)));
+  const mC = !cat || b.cat === cat;
+  return mQ && mC;
+}
+
+function renderDrop(res, q) {
+  document.getElementById('sdHeaderTxt').textContent = q ? `"${q}"` : 'All Results';
+  document.getElementById('sdCount').textContent = res.length + ' found';
+  const el = document.getElementById('sdItems');
+  if (!res.length) {
+    el.innerHTML = `<div class="sd-empty">No results. Try different keywords.</div>`;
+  } else {
+    el.innerHTML = res.map(b => `
+      <div class="sd-item" onclick="openDetail(${b.id})">
+        <div class="sd-icon">${b.icon}</div>
+        <div>
+          <div class="sd-name">${highlight(b.name, q)}</div>
+          <div class="sd-meta">
+            <span class="sd-cat">${b.cat}</span>
+            <span>📍 ${b.area}</span>
+            <span class="sd-stars">${starsStr(b.rating)} ${b.rating}</span>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+  searchDrop.classList.add('visible');
+}
+
+function highlight(text, q) {
+  if (!q) return text;
+  const re = new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+  return text.replace(re, '<mark style="background:rgba(201,136,42,.3);border-radius:2px;padding:0 1px;">$1</mark>');
+}
+
+function closeDrop() { searchDrop.classList.remove('visible'); }
+
+function doSearch() {
+  const q   = heroSearch.value.trim();
+  const cat = heroCat.value;
+  closeDrop();
+  const res = BUSINESSES.filter(b => matchBusiness(b, q.toLowerCase(), cat));
+  const srPage = document.getElementById('srPage');
+  const srGrid = document.getElementById('srGrid');
+  document.getElementById('srTitle').innerHTML = q ? `Results for "<em>${q}</em>"` : 'All Businesses';
+  document.getElementById('srSub').textContent = `${res.length} results in Narowal district`;
+  srPage.style.display = 'block';
+  document.getElementById('srEmpty').style.display = res.length ? 'none' : 'block';
+  srGrid.innerHTML = res.map(b => `
+    <div class="rc fade-in" onclick="openDetail(${b.id})">
+      <div class="rc-top">
+        <div class="rc-icon">${b.icon}</div>
+        <div>
+          <div class="rc-name">${b.name}</div>
+          <div class="rc-area">📍 ${b.area} · ${openStatus(b)}</div>
+        </div>
+      </div>
+      <div class="rc-desc">${b.desc.substring(0,90)}…</div>
+      <div class="rc-foot">
+        <span class="rc-phone">📞 ${b.phone}</span>
+        <button class="rc-view" onclick="event.stopPropagation();openDetail(${b.id})">View →</button>
+      </div>
+    </div>
+  `).join('');
+  srPage.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function quickSearch(q) {
+  heroSearch.value = q;
+  doSearch();
+}
+
+/* ═══ OPEN/CLOSED STATUS (DYNAMIC) ══════════════════════════  */
+function openStatus(b) {
+  if (b.hours.allDay) return '<span class="open-badge is-open">Open 24hrs</span>';
+  const now  = new Date();
+  const cur  = now.getHours() * 60 + now.getMinutes();
+  const [oh, om] = b.hours.open.split(':').map(Number);
+  const [ch, cm] = b.hours.close.split(':').map(Number);
+  const isOpen = cur >= oh * 60 + om && cur < ch * 60 + cm;
+  return isOpen
+    ? `<span class="open-badge is-open">Open · closes ${b.hours.close}</span>`
+    : `<span class="open-badge is-closed">Closed · opens ${b.hours.open}</span>`;
+}
+
+/* ═══ STARS ═════════════════════════════════════════════════  */
+function starsStr(r) {
+  const full = Math.floor(r);
+  const half = r % 1 >= 0.5;
+  return '★'.repeat(full) + (half ? '½' : '') + '☆'.repeat(5 - full - (half?1:0));
+}
+
+/* ═══ PART 2: LISTINGS PAGE ══════════════════════════════════  */
+const CAT_META = {
+  Hospital:   {label:'Healthcare', urdu:'ہسپتال', title:'Hospitals in', intro:'Complete list with verified contact numbers, open/closed status, and patient reviews.'},
+  School:     {label:'Education',  urdu:'اسکول',  title:'Schools in',  intro:'Top schools and colleges with addresses, contact numbers, and admission information.'},
+  Restaurant: {label:'Food & Dining', urdu:'ریستوران', title:'Restaurants in', intro:'Best restaurants, cafés, and food spots with locations and contact numbers.'},
+  Bank:       {label:'Finance',    urdu:'بینک',   title:'Banks in',    intro:'Banks, ATMs, and financial services with branch addresses and contact numbers.'},
+  Pharmacy:   {label:'Healthcare', urdu:'دوائی',  title:'Pharmacies in', intro:'Pharmacies and medical stores — includes 24-hour pharmacies.'},
+  Sports:     {label:'Sports',     urdu:'کھیل',   title:'Sports Shops in', intro:'Sports equipment and custom jersey makers across Narowal district.'},
+  Clothing:   {label:'Fashion',    urdu:'لباس',   title:'Clothing Shops in', intro:"Women's and men's clothing and Pakistani dress boutiques."},
+  Govt:       {label:'Government', urdu:'دفاتر',  title:'Government Offices in', intro:'NADRA, courts, railway stations, DC office, tehsil offices — all government services in Narowal district.'},
+  Stationery:    {label:'Shopping', urdu:'اسٹیشنری', title:'Stationery Shops in', intro:'Books, office and school supplies across Narowal district.'},
+  Crockery:      {label:'Shopping', urdu:'برتن', title:'Crockery Shops in', intro:'Dinnerware, kitchenware and crockery stores across Narowal district.'},
+  Shopping:      {label:'Shopping', urdu:'دکانیں', title:'Shopping Stores in', intro:'General stores and shopping centres across Narowal district.'},
+  Cafe:          {label:'Food & Dining', urdu:'کیفے', title:'Cafés in', intro:'Coffee shops and cafés across Narowal district.'},
+  AutoWorkshop:  {label:'Automotive', urdu:'آٹو ورکشاپ', title:'Auto Workshops in', intro:'Car repair and auto workshops across Narowal district.'},
+  MotorWorkshop: {label:'Automotive', urdu:'موٹر ورکشاپ', title:'Motor Workshops in', intro:'Motorcycle repair and motor workshops across Narowal district.'},
+  Sanitary:      {label:'Home & Hardware', urdu:'سینیٹری', title:'Sanitary Shops in', intro:'Bathroom fittings and sanitary ware stores across Narowal district.'},
+  Lawyer:        {label:'Professional Services', urdu:'وکیل', title:'Lawyers in', intro:'Advocates and legal services across Narowal district.'},
+  Electronics:   {label:'Shopping', urdu:'الیکٹرانکس', title:'Electronic Stores in', intro:'Home appliances and electronics shops across Narowal district.'},
+  Mobile:        {label:'Shopping', urdu:'موبائل', title:'Mobile Shops in', intro:'Mobile phones, accessories and repair shops across Narowal district.'},
+  Furniture:     {label:'Home & Hardware', urdu:'فرنیچر', title:'Furniture Shops in', intro:'Furniture stores and makers across Narowal district.'},
+  Cosmetics:     {label:'Beauty & Personal Care', urdu:'کاسمیٹکس', title:'Cosmetics & Skin Care Shops in', intro:'Beauty and skin care product stores across Narowal district.'},
+  Tailor:        {label:'Fashion', urdu:'درزی', title:'Tailors in', intro:'Tailoring and stitching shops across Narowal district.'},
+  Barber:        {label:'Beauty & Personal Care', urdu:'حجام', title:'Barber Shops in', intro:'Men\\'s salons and barber shops across Narowal district.'},
+  Laundry:       {label:'Personal Services', urdu:'لانڈری', title:'Laundry Shops in', intro:'Laundry and dry cleaning services across Narowal district.'},
+  CarWash:       {label:'Automotive', urdu:'کار واش', title:'Car Wash in', intro:'Car wash and detailing services across Narowal district.'},
+  PetrolPump:    {label:'Automotive', urdu:'پٹرول پمپ', title:'Petrol Pumps in', intro:'Fuel stations across Narowal district.'},
+  Park:          {label:'Recreation', urdu:'پارک', title:'Parks in', intro:'Public parks and recreational areas across Narowal district.'},
+  Ground:        {label:'Recreation', urdu:'گراؤنڈ', title:'Grounds in', intro:'Sports grounds and playing fields across Narowal district.'},
+  Travel:        {label:'Travel & Transport', urdu:'ٹریول', title:'Travel Agencies in', intro:'Travel agents and ticketing services across Narowal district.'},
+  Transport:     {label:'Travel & Transport', urdu:'ٹرانسپورٹ', title:'Transport Services in', intro:'Bus, van and transport services across Narowal district.'},
+  Meat:          {label:'Food & Dining', urdu:'گوشت', title:'Meat Shops in', intro:'Butchers and meat shops across Narowal district.'},
+};
+
+function showListings(cat) {
+  currentCatFilter  = cat || 'Hospital';
+  currentAreaFilter = 'all';
+  shownCount        = 6;
+  const m = CAT_META[currentCatFilter] || CAT_META['Hospital'];
+  document.getElementById('listingsBadge').textContent = m.label;
+  document.getElementById('listingsHero').setAttribute('data-urdu', m.urdu);
+  document.getElementById('listingsTitle').innerHTML = `${m.title} <em>Narowal</em>`;
+  document.getElementById('listingsIntro').textContent = m.intro;
+  document.querySelectorAll('.filter-chip').forEach(c => { if(c.textContent === 'All Areas') c.classList.add('active'); else c.classList.remove('active'); });
+  updateMeta(currentCatFilter);
+  renderListings();
+  showPage('listings');
+}
+
+function renderListings() {
+  const sort  = document.getElementById('sortSelect').value;
+  let pool = BUSINESSES.filter(b => {
+    const mC = !currentCatFilter || b.cat === currentCatFilter;
+    const mA = currentAreaFilter === 'all' || b.area === currentAreaFilter;
+    return mC && mA;
+  });
+  if (sort === 'rating')  pool.sort((a,b) => b.rating - a.rating);
+  if (sort === 'name')    pool.sort((a,b) => a.name.localeCompare(b.name));
+  if (sort === 'newest')  pool.sort((a,b) => b.id - a.id);
+
+  const shown = pool.slice(0, shownCount);
+  const grid  = document.getElementById('listingsGrid');
+  document.getElementById('listingsCount').textContent = `${pool.length} listings`;
+  document.getElementById('loadMoreBtn').style.display = pool.length > shownCount ? 'inline-flex' : 'none';
+
+  if (!shown.length) {
+    grid.innerHTML = `<div style="text-align:center;padding:48px;color:var(--muted);">🔍 No listings found for this filter.</div>`;
+    return;
+  }
+
+  grid.innerHTML = shown.map((b,i) => {
+    const isFav = favs.includes(b.id);
+    const revs  = (reviewsDB[b.id] || []);
+    const ratingDisplay = b.rating.toFixed(1);
+    const totalRevs = b.reviews + revs.length;
+    return `
+    <div class="listing-card${b.featured ? ' featured-card' : ''} fade-in" style="animation-delay:${i*.05}s">
+      <button class="fav-btn${isFav?' active':''}" onclick="toggleFav(${b.id},this)" title="${isFav?'Remove from favourites':'Save to favourites'}">${isFav?'❤️':'🤍'}</button>
+      <div class="lc-icon">${b.icon}</div>
+      <div class="lc-body">
+        <div class="lc-top">
+          <div class="lc-name">${b.name}</div>
+          ${b.verified ? '<span class="badge badge-verified">✓ Verified</span>' : ''}
+          ${b.featured ? '<span class="badge badge-featured">⭐ Featured</span>' : ''}
+        </div>
+        <div class="rating-inline" style="margin:3px 0;">
+          <span class="stars-display" style="font-size:.78rem;">${starsStr(b.rating)}</span>
+          <span class="rating-num">${ratingDisplay} (${totalRevs} reviews)</span>
+          <span style="margin-left:6px;">${openStatus(b)}</span>
+        </div>
+        <div class="lc-meta">
+          <span>📍 ${b.addr}</span>
+          <span>📞 ${b.phone}</span>
+          <span>🗺️ ${b.area}</span>
+        </div>
+        <div class="lc-desc">${b.desc}</div>
+        ${b.tags ? `<div class="tags" style="margin-top:6px;">${b.tags.slice(0,4).map(t=>`<span class="tag" style="font-size:.62rem;padding:3px 8px;">${t}</span>`).join('')}</div>` : ''}
+      </div>
+      <div class="lc-actions">
+        <a href="tel:${b.phone}" class="btn btn-green btn-sm" onclick="trackClick(${b.id},'call')">📞 Call</a>
+        <a href="https://wa.me/92${b.phone.replace(/[^0-9]/g,'').replace(/^0/,'')}" class="btn btn-wa btn-sm" onclick="trackClick(${b.id},'wa')">WhatsApp</a>
+        <button class="btn btn-outline btn-sm" onclick="openDetail(${b.id})">View →</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function filterByArea(area, btn) {
+  currentAreaFilter = area;
+  shownCount = 6;
+  if (btn) {
+    document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  if (!document.getElementById('page-listings').classList.contains('active')) {
+    showPage('listings');
+  }
+  renderListings();
+}
+
+function loadMore() { shownCount += 4; renderListings(); }
+
+/* ═══ FAVOURITES ════════════════════════════════════════════  */
+function toggleFav(id, btn) {
+  const idx = favs.indexOf(id);
+  if (idx > -1) { favs.splice(idx,1); btn.textContent='🤍'; btn.classList.remove('active'); showToast('Removed from favourites'); }
+  else          { favs.push(id);       btn.textContent='❤️'; btn.classList.add('active');    showToast('Saved to favourites ❤️', 'success'); }
+  localStorage.setItem('an_favs', JSON.stringify(favs));
+}
+
+/* ═══ CLICK TRACKING ════════════════════════════════════════  */
+function trackClick(id, type) {
+  if (!clickStats[id]) clickStats[id] = {call:0, wa:0};
+  clickStats[id][type]++;
+  localStorage.setItem('an_clicks', JSON.stringify(clickStats));
+}
+
+/* ═══ PART 3: DETAIL PAGE ════════════════════════════════════  */
+function openDetail(id) {
+  closeDrop();
+  const b = BUSINESSES.find(x => x.id === id);
+  if (!b) return;
+  currentDetailId  = id;
+  currentDetailCat = b.cat;
+
+  const cleanPhone = '92' + b.phone.replace(/[^0-9]/g,'').replace(/^0/,'');
+
+  // Update dynamic meta
+  document.title = `${b.name} – Narowal | Apna Narowal`;
+  document.getElementById('metaDesc').setAttribute('content', `${b.name} in ${b.area}, Narowal. Phone: ${b.phone}. Address: ${b.addr}. ${b.desc.substring(0,100)}`);
+
+  // Breadcrumb
+  document.getElementById('crumbCat').textContent = b.cat + 's';
+  document.getElementById('crumbName').textContent = b.name;
+
+  // Header
+  document.getElementById('dIcon').textContent = b.icon;
+  document.getElementById('dName').textContent = b.name;
+  document.getElementById('dAddr').textContent = '📍 ' + b.addr + ', ' + b.area + ', Narowal District, Punjab';
+
+  // Badges
+  const allRevs = (reviewsDB[id] || []);
+  const totalRevs = b.reviews + allRevs.length;
+  document.getElementById('dBadges').innerHTML = `
+    ${b.verified ? '<span class="badge badge-verified">✓ Verified</span>' : ''}
+    ${b.featured ? '<span class="badge badge-featured">⭐ Featured</span>' : ''}
+    ${openStatus(b)}
+    <span class="rating-inline"><span class="stars-display">${starsStr(b.rating)}</span><span class="rating-num">${b.rating} (${totalRevs} reviews)</span></span>
+  `;
+
+  // CTA
+  document.getElementById('dCta').innerHTML = `
+    <a href="tel:${b.phone}" class="btn btn-green btn-lg" onclick="trackClick(${b.id},'call')">📞 Call Now</a>
+    <a href="https://wa.me/${cleanPhone}" class="btn btn-wa btn-lg" onclick="trackClick(${b.id},'wa')">💬 WhatsApp</a>
+    <button class="btn btn-outline btn-lg" onclick="toggleFav(${b.id},this)">${favs.includes(b.id)?'❤️ Saved':'🤍 Save'}</button>
+  `;
+
+  // Click stats
+  const cs = clickStats[id] || {call:0, wa:0};
+  document.getElementById('dStats').innerHTML = `
+    <span class="click-stat">📞 ${cs.call} calls</span>
+    <span class="click-stat">💬 ${cs.wa} WhatsApp clicks</span>
+  `;
+
+  // Info grid
+  document.getElementById('dInfo').innerHTML = `
+    <div class="info-item"><div class="info-lbl">Phone</div><div class="info-val"><a href="tel:${b.phone}">${b.phone}</a></div></div>
+    <div class="info-item"><div class="info-lbl">Category</div><div class="info-val">${b.cat}</div></div>
+    <div class="info-item"><div class="info-lbl">Area</div><div class="info-val">${b.area}</div></div>
+    <div class="info-item"><div class="info-lbl">Status</div><div class="info-val">${openStatus(b)}</div></div>
+    <div class="info-item"><div class="info-lbl">WhatsApp</div><div class="info-val"><a href="https://wa.me/${cleanPhone}">Chat Now</a></div></div>
+    <div class="info-item"><div class="info-lbl">Rating</div><div class="info-val">${b.rating} ★ (${totalRevs})</div></div>
+  `;
+
+  // Map
+  document.getElementById('dMapName').textContent = b.name;
+  document.getElementById('dMapAddr').textContent = b.addr;
+  document.getElementById('dMapLink').href = `https://www.google.com/maps/search/?api=1&query=${b.lat},${b.lng}`;
+
+  // Hours
+  const days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  const todayIdx = (new Date().getDay() + 6) % 7;
+  document.getElementById('dHours').innerHTML = days.map((d,i) => `
+    <tr${i===todayIdx?' class="today"':''}>
+      <td class="hday">${d}${i===todayIdx?' (Today)':''}</td>
+      <td class="htime">${b.hours.allDay ? 'Open 24 Hours ✅' : `${b.hours.open} – ${b.hours.close}`}</td>
+    </tr>
+  `).join('');
+
+  // Description
+  document.getElementById('dDesc').textContent = b.desc;
+
+  // Sidebar
+  document.getElementById('sideCall').href = 'tel:' + b.phone;
+  document.getElementById('sideWa').href   = 'https://wa.me/' + cleanPhone;
+  document.getElementById('dCallBtn2').onclick = () => { window.location.href = 'tel:' + b.phone; trackClick(id,'call'); };
+  document.getElementById('sideInfo').innerHTML = `
+    <li><span>Category</span><span>${b.cat}</span></li>
+    <li><span>Area</span><span>${b.area}</span></li>
+    <li><span>Hours</span><span>${b.hours.allDay?'24 Hours':`${b.hours.open}–${b.hours.close}`}</span></li>
+    <li><span>Rating</span><span>${b.rating} ★</span></li>
+    ${b.verified ? '<li><span>Status</span><span style="color:var(--green);font-weight:600;">Verified ✓</span></li>' : ''}
+  `;
+
+  // Inquiry WhatsApp
+  document.getElementById('inquiryMsg').value = '';
+
+  // Reviews
+  renderReviews(id, b);
+
+  // Related
+  const rel = BUSINESSES.filter(x => x.cat === b.cat && x.id !== id).slice(0,4);
+  document.getElementById('relatedGrid').innerHTML = rel.map(r => `
+    <div class="related-card" onclick="openDetail(${r.id})">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <span style="font-size:1.4rem;">${r.icon}</span>
+        <h3>${r.name}</h3>
+      </div>
+      <p>📍 ${r.area} · ${r.rating}★ · ${openStatus(r)}</p>
+    </div>
+  `).join('') || '<p style="color:var(--muted);font-size:.82rem;">No related businesses found.</p>';
+
+  // JSON-LD schema for this business
+  injectBusinessSchema(b);
+
+  showPage('detail');
+}
+
+/* ═══ REVIEWS ════════════════════════════════════════════════  */
+function renderReviews(id, b) {
+  const userRevs = reviewsDB[id] || [];
+  const allRevs  = b.reviews + userRevs.length;
+
+  // Rating bars (approximate distribution)
+  const dist = [Math.round(allRevs*.06), Math.round(allRevs*.08), Math.round(allRevs*.12), Math.round(allRevs*.2), allRevs - Math.round(allRevs*.06) - Math.round(allRevs*.08) - Math.round(allRevs*.12) - Math.round(allRevs*.2)].reverse();
+  document.getElementById('ratingSummary').innerHTML = `
+    <div class="big-score">
+      <div class="big-score-num">${b.rating.toFixed(1)}</div>
+      <div class="big-score-stars">${starsStr(b.rating)}</div>
+      <div class="big-score-count">${allRevs} reviews</div>
+    </div>
+    <div class="rating-bars">
+      ${[5,4,3,2,1].map((n,i) => `
+        <div class="rbar-row">
+          <span class="rbar-lbl">${n}</span>
+          <div class="rbar"><div class="rbar-fill" style="width:${Math.round(dist[i]/allRevs*100)}%"></div></div>
+          <span class="rbar-n">${dist[i]}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  // Sample + user reviews
+  const samples = [
+    {name:'Ahmad M.', date:'April 2025', stars:5, text:'Excellent service. Very professional staff. Highly recommended for anyone in Narowal.'},
+    {name:'Sana R.',  date:'March 2025', stars:4, text:'Good experience overall. Wait time was a bit long but the service quality was good.'},
+    {name:'M. Hassan',date:'February 2025', stars:5, text:'Best in Narowal. Clean facilities, qualified staff, and reasonable charges.'},
+  ];
+  const toShow = [...userRevs, ...samples].slice(0,5);
+  document.getElementById('reviewsList').innerHTML = toShow.map(r => `
+    <div class="review-card fade-in">
+      <div class="reviewer">
+        <div class="reviewer-av">${r.name.charAt(0)}</div>
+        <div><div class="reviewer-name">${r.name}</div><div class="reviewer-date">${r.date}</div></div>
+        <div class="review-stars">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</div>
+      </div>
+      <p class="review-text">${r.text}</p>
+    </div>
+  `).join('');
+
+  // Reset star picker
+  selectedStars = 0;
+  document.querySelectorAll('.star-pick').forEach(s => s.textContent = '☆');
+}
+
+function pickStar(n) {
+  selectedStars = n;
+  document.querySelectorAll('.star-pick').forEach((s,i) => {
+    s.textContent = i < n ? '★' : '☆';
+    s.classList.toggle('selected', i < n);
+  });
+}
+
+function submitReview() {
+  const name = document.getElementById('reviewName').value.trim();
+  const text = document.getElementById('reviewText').value.trim();
+  if (!selectedStars) { showToast('Please select a star rating', 'error'); return; }
+  if (!name)           { showToast('Please enter your name', 'error'); return; }
+  if (text.length < 10){ showToast('Review must be at least 10 characters', 'error'); return; }
+  if (!reviewsDB[currentDetailId]) reviewsDB[currentDetailId] = [];
+  const rev = {name, date:'Just now', stars:selectedStars, text};
+  reviewsDB[currentDetailId].unshift(rev);
+  localStorage.setItem('an_reviews', JSON.stringify(reviewsDB));
+  const b = BUSINESSES.find(x => x.id === currentDetailId);
+  renderReviews(currentDetailId, b);
+  document.getElementById('reviewName').value = '';
+  document.getElementById('reviewText').value = '';
+  selectedStars = 0;
+  document.querySelectorAll('.star-pick').forEach(s => s.textContent = '☆');
+  showToast('Review submitted! Thank you ★', 'success');
+}
+
+/* ═══ INQUIRY ════════════════════════════════════════════════  */
+function sendInquiry() {
+  const b   = BUSINESSES.find(x => x.id === currentDetailId);
+  const msg = document.getElementById('inquiryMsg').value.trim();
+  const phone = '92' + b.phone.replace(/[^0-9]/g,'').replace(/^0/,'');
+  const text  = encodeURIComponent(`Salam, I found your listing on Apna Narowal.\n\nBusiness: ${b.name}\n\n${msg || 'I would like more information.'}`);
+  window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+  trackClick(currentDetailId, 'wa');
+}
+
+/* ═══ CLAIM & REPORT ════════════════════════════════════════  */
+function submitClaim() {
+  const b = BUSINESSES.find(x => x.id === currentDetailId);
+  const msg = encodeURIComponent(`Salam, I want to claim my business listing on Apna Narowal.\n\nBusiness: ${b.name}\nPhone: ${b.phone}`);
+  window.open(`https://wa.me/923001234567?text=${msg}`, '_blank');
+  closeModal('claimModal');
+  showToast('Claim request sent via WhatsApp!', 'success');
+}
+
+function submitReport() {
+  closeModal('reportModal');
+  showToast('Report submitted. Thank you!', 'success');
+}
+
+/* ═══ MODAL ════════════════════════════════════════════════  */
+function openModal(id)  { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+document.querySelectorAll('.modal-overlay').forEach(m => {
+  m.addEventListener('click', e => { if (e.target === m) m.classList.remove('open'); });
+});
+
+/* ═══ TOAST ════════════════════════════════════════════════  */
+let toastTimer;
+function showToast(msg, type='') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = `toast${type?' '+type:''}`;
+  void t.offsetWidth;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+/* ═══ NEAR ME ════════════════════════════════════════════════  */
+function findNearMe() {
+  const btn = document.getElementById('nearMeBtn');
+  if (!navigator.geolocation) { showToast('GPS not supported by your browser', 'error'); return; }
+  btn.classList.add('locating');
+  btn.innerHTML = '<span class="nm-dot"></span>Locating…';
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      userLat = pos.coords.latitude;
+      userLng = pos.coords.longitude;
+      btn.classList.remove('locating'); btn.classList.add('located');
+      btn.innerHTML = '<span class="nm-dot"></span>Near Me ✓';
+      renderNearMe();
+    },
+    err => {
+      btn.classList.remove('locating');
+      btn.innerHTML = '<span class="nm-dot"></span>Near Me';
+      const msgs = {1:'Location access denied — please allow in browser settings.',2:'Location unavailable.',3:'Location request timed out.'};
+      showLocError(msgs[err.code] || 'Could not get location.');
+    },
+    {enableHighAccuracy:true, timeout:10000, maximumAge:60000}
+  );
+}
+
+function haversine(la1,lo1,la2,lo2) {
+  const R=6371, dLa=(la2-la1)*Math.PI/180, dLo=(lo2-lo1)*Math.PI/180;
+  const a=Math.sin(dLa/2)**2+Math.cos(la1*Math.PI/180)*Math.cos(la2*Math.PI/180)*Math.sin(dLo/2)**2;
+  return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+}
+
+function fmtDist(km) { return km<1 ? Math.round(km*1000)+'m' : km<10 ? km.toFixed(1)+'km' : Math.round(km)+'km'; }
+
+function renderNearMe() {
+  const panel = document.getElementById('nearMePanel');
+  const grid  = document.getElementById('nearMeGrid');
+  document.getElementById('locErr').classList.remove('visible');
+  document.getElementById('locPill').textContent = '📍 ' + (userLat.toFixed(3)) + '°N';
+  const cat = heroCat.value;
+  const sorted = BUSINESSES
+    .filter(b => !cat || b.cat === cat)
+    .map(b => ({...b, dist:haversine(userLat,userLng,b.lat,b.lng)}))
+    .sort((a,b) => a.dist-b.dist);
+  document.getElementById('nearMeSub').textContent = `${sorted.length} businesses sorted nearest to furthest`;
+  grid.innerHTML = sorted.map((b,i) => {
+    const dc = b.dist<3?'dist-near':b.dist<15?'dist-mid':'dist-far';
+    return `
+    <div class="rc fade-in" style="animation-delay:${i*.04}s" onclick="openDetail(${b.id})">
+      <div class="rc-top">
+        <div class="rc-icon">${b.icon}</div>
+        <div style="flex:1;"><div class="rc-name">${b.name}</div><div class="rc-area">📍 ${b.area}</div></div>
+        <span class="dist-badge ${dc}">📍 ${fmtDist(b.dist)}</span>
+      </div>
+      <div class="rc-desc">${b.desc.substring(0,80)}…</div>
+      <div class="rc-foot">
+        <span class="rc-phone">📞 ${b.phone}</span>
+        <a href="https://www.google.com/maps/search/?api=1&query=${b.lat},${b.lng}" target="_blank" class="btn btn-outline btn-sm" onclick="event.stopPropagation()">Directions</a>
+      </div>
+    </div>`;
+  }).join('');
+  panel.classList.add('visible');
+  document.getElementById('srPage').style.display='none';
+  panel.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function showLocError(msg) {
+  const el = document.getElementById('locErr');
+  document.getElementById('locErrMsg').textContent = msg;
+  el.classList.add('visible');
+  document.getElementById('nearMePanel').classList.add('visible');
+}
+
+function clearNearMe() {
+  userLat=null; userLng=null;
+  document.getElementById('nearMePanel').classList.remove('visible');
+  const btn=document.getElementById('nearMeBtn');
+  btn.classList.remove('located','locating');
+  btn.innerHTML='<span class="nm-dot"></span>Near Me';
+}
+
+/* ═══ SUBMIT FORM ════════════════════════════════════════════  */
+function selectTier(el, val) {
+  document.querySelectorAll('.price-tier').forEach(t => t.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedTierVal = val;
+}
+
+function vField(id, errId, fn, msg) {
+  const el=document.getElementById(id), er=document.getElementById(errId);
+  const ok=fn(el.value);
+  el.classList.toggle('err',!ok);
+  if(er){er.textContent=msg; er.classList.toggle('show',!ok);}
+  return ok;
+}
+
+function handleSubmit() {
+  let ok=true;
+  ok=vField('fn','err-fn',v=>v.trim().length>=3,'Business name required (min 3 chars).')&&ok;
+  ok=vField('fc','err-fc',v=>v!=='','Please select a category.')&&ok;
+  ok=vField('fa','err-fa',v=>v!=='','Please select an area.')&&ok;
+  ok=vField('fp','err-fp',v=>/^[\d\s\-\+]{7,}$/.test(v.trim()),'Valid phone number required.')&&ok;
+  ok=vField('fad','err-fad',v=>v.trim().length>=5,'Full address required.')&&ok;
+  ok=vField('fd','err-fd',v=>v.trim().length>=30,'Description min 30 characters.')&&ok;
+  if(!ok) return;
+
+  const btn=document.getElementById('submitBtn');
+  btn.classList.add('loading');
+  document.getElementById('submitTxt').textContent='⏳ Submitting…';
+
+  // Send to WhatsApp (real-world flow — owner reviews on WA)
+  const name=document.getElementById('fn').value.trim();
+  const cat=document.getElementById('fc').value;
+  const area=document.getElementById('fa').value;
+  const phone=document.getElementById('fp').value.trim();
+  const wa=document.getElementById('fw').value.trim();
+  const addr=document.getElementById('fad').value.trim();
+  const desc=document.getElementById('fd').value.trim();
+  const tier=selectedTierVal;
+  const mapLink=document.getElementById('fmap').value.trim();
+  const contact=document.getElementById('fcon').value.trim();
+
+  const waMsg = encodeURIComponent(
+    `📋 NEW LISTING SUBMISSION\n\n` +
+    `Business: ${name}\nCategory: ${cat}\nArea: ${area}\n` +
+    `Phone: ${phone}\nWhatsApp: ${wa||'same'}\n` +
+    `Address: ${addr}\nPlan: ${tier.toUpperCase()}\n` +
+    `Maps: ${mapLink||'not provided'}\nContact: ${contact||'n/a'}\n\n` +
+    `Description:\n${desc}`
+  );
+
+  setTimeout(() => {
+    btn.classList.remove('loading');
+    document.getElementById('submitTxt').textContent='📋 Submit Listing';
+    document.getElementById('formBody').style.display='none';
+    document.getElementById('submitSuccess').classList.add('show');
+    // Open WhatsApp with full details for owner
+    window.open(`https://wa.me/923001234567?text=${waMsg}`, '_blank');
+  }, 1500);
+}
+
+function resetForm() {
+  document.getElementById('submitSuccess').classList.remove('show');
+  document.getElementById('formBody').style.display='block';
+  ['fn','fc','fa','fp','fw','fad','fd','fmap','fcon'].forEach(id => {
+    const el=document.getElementById(id); if(el){el.value=''; el.classList.remove('err');}
+  });
+  document.querySelectorAll('.ferr').forEach(e=>e.classList.remove('show'));
+  document.querySelectorAll('.price-tier').forEach(t=>t.classList.remove('selected'));
+  document.querySelectorAll('.price-tier')[1].classList.add('selected');
+  selectedTierVal='standard';
+}
+
+/* ═══ PHASE 3: JSON-LD SCHEMA PER BUSINESS ═══════════════════ */
+function injectBusinessSchema(b) {
+  const existing = document.getElementById('bizSchema');
+  if (existing) existing.remove();
+  const s = document.createElement('script');
+  s.type='application/ld+json';
+  s.id='bizSchema';
+  const schema = {
+    "@context":"https://schema.org",
+    "@type": b.cat==='Hospital'?'Hospital':b.cat==='School'?'School':b.cat==='Restaurant'?'Restaurant':'LocalBusiness',
+    "name": b.name,
+    "description": b.desc,
+    "telephone": b.phone,
+    "address": {
+      "@type":"PostalAddress",
+      "streetAddress": b.addr,
+      "addressLocality": b.area,
+      "addressRegion":"Punjab",
+      "postalCode":"51600",
+      "addressCountry":"PK"
+    },
+    "geo":{"@type":"GeoCoordinates","latitude":b.lat,"longitude":b.lng},
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":b.rating,"reviewCount":b.reviews,"bestRating":"5"},
+    "openingHoursSpecification": b.hours.allDay
+      ? [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}]
+      : [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":b.hours.open,"closes":b.hours.close}],
+    "url": `https://apnanarowal.pk/listing/${b.id}`
+  };
+  s.textContent = JSON.stringify(schema);
+  document.head.appendChild(s);
+
+  // Breadcrumb schema
+  const bc = document.getElementById('bcSchema');
+  if(bc) bc.remove();
+  const bs = document.createElement('script');
+  bs.type='application/ld+json'; bs.id='bcSchema';
+  bs.textContent = JSON.stringify({
+    "@context":"https://schema.org","@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://apnanarowal.pk/"},
+      {"@type":"ListItem","position":2,"name":b.cat+"s in Narowal","item":`https://apnanarowal.pk/${b.cat.toLowerCase()}s-in-narowal`},
+      {"@type":"ListItem","position":3,"name":b.name,"item":`https://apnanarowal.pk/listing/${b.id}`}
+    ]
+  });
+  document.head.appendChild(bs);
+}
+
+/* ═══ INIT ═══════════════════════════════════════════════════ */
+window.addEventListener('DOMContentLoaded', () => {
+  currentCatFilter = 'Hospital';
+  renderListings();
+  updateMeta('home');
+});
+</script>
+
+<!-- ═══ PHASE 4+5: BACKEND & WORDPRESS NOTES ═══════════════════════
+  BACKEND PLAN (when ready to scale):
+  - Use Firebase Firestore (free tier = 50K reads/day)
+  - Collections: businesses, reviews, users, clicks, submissions
+  - Auth: Firebase Auth (phone number via Pakistan telecom)
+  - Admin panel: simple password-protected page to approve submissions
+  
+  WORDPRESS CONVERSION:
+  - Businesses → Custom Post Type 'an_business'
+  - Category → Taxonomy 'an_category'
+  - Area → Taxonomy 'an_area'
+  - Reviews → Custom Post Type 'an_review' (linked by post ID)
+  - Search → SearchWP plugin (free tier works)
+  - Map → WP Google Maps (free)
+  - Schema → Rank Math SEO (free)
+  - Submission form → WPForms + Gravity Forms
+  - Theme: Kadence with Kadence Blocks
+  - Listing plugin: Business Directory Plugin (free tier)
+  
+  SEO PAGES TO CREATE (high traffic):
+  1. /best-hospitals-in-narowal
+  2. /nadra-office-narowal-contact-number
+  3. /restaurants-in-narowal
+  4. /schools-in-shakargarh
+  5. /24-hour-hospitals-narowal
+  6. /government-offices-narowal
+  7. /railway-station-narowal-timing
+  8. /cheap-restaurants-narowal
+  9. /pharmacies-in-narowal
+  10. /jobs-in-narowal-2025
+  11. /property-rates-narowal-2025
+  12. /hospitals-in-shakargarh
+  13. /schools-in-narowal
+  14. /banks-in-narowal
+  15. /dc-office-narowal
+  16. /court-narowal-contact
+  17. /clothing-shops-narowal
+  18. /sports-shops-narowal
+  19. /zafarwal-directory
+  20. /narowal-city-guide
+  ═══════════════════════════════════════════════════════════════ -->
+
+
+
+
+
+
+
+<script>
+/* ── APNA NAROWAL WEATHER WIDGET ── */
+var W_ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌧️',55:'🌧️',61:'🌧️',63:'🌧️',65:'⛈️',71:'🌨️',73:'❄️',75:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',95:'⛈️',96:'⛈️',99:'⛈️'};
+var W_DESC  = {0:'Clear Sky',1:'Mainly Clear',2:'Partly Cloudy',3:'Overcast',45:'Foggy',48:'Foggy',51:'Light Drizzle',53:'Drizzle',55:'Heavy Drizzle',61:'Light Rain',63:'Rain',65:'Heavy Rain',71:'Light Snow',73:'Snow',75:'Heavy Snow',80:'Showers',81:'Showers',82:'Heavy Showers',95:'Thunderstorm',96:'Thunderstorm',99:'Thunderstorm'};
+var W_DAYS  = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+function wIcon(c){ return W_ICONS[c] || '🌡️'; }
+function wDesc(c){ return W_DESC[c]  || 'Variable'; }
+
+function wCard(elId, name, urdu, lat, lon, withForecast) {
+  var el = document.getElementById(elId);
+  if (!el) return;
+  el.innerHTML = '<div style="color:rgba(255,255,255,.55);font-size:.8rem;padding:10px 0;">⏳ Loading '+name+'…</div>';
+
+  var url = 'https://api.open-meteo.com/v1/forecast'
+    + '?latitude='  + lat
+    + '&longitude=' + lon
+    + '&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m'
+    + (withForecast ? '&daily=temperature_2m_max,temperature_2m_min,weathercode&forecast_days=7' : '')
+    + '&timezone=Asia%2FKarachi';
+
+  fetch(url)
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var c    = data.current;
+      var code = c.weather_code;
+
+      el.innerHTML =
+        '<div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.6);margin-bottom:8px;">'
+        + '📍 ' + name + ' <span style="opacity:.45;font-family:serif;">' + urdu + '</span></div>'
+        + '<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">'
+        +   '<span style="font-size:2.2rem;line-height:1;">' + wIcon(code) + '</span>'
+        +   '<span style="font-size:2.4rem;font-weight:800;color:white;line-height:1;">'
+        +     Math.round(c.temperature_2m)
+        +     '<sup style="font-size:.9rem;color:rgba(255,255,255,.5);vertical-align:top;margin-top:6px;">°C</sup>'
+        +   '</span>'
+        + '</div>'
+        + '<div style="font-size:.8rem;color:rgba(255,255,255,.85);margin-bottom:8px;text-transform:capitalize;">' + wDesc(code) + '</div>'
+        + '<div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;">'
+        +   '<div style="font-size:.68rem;color:rgba(255,255,255,.55);">💧 <strong style="color:rgba(255,255,255,.9);">' + c.relative_humidity_2m + '%</strong></div>'
+        +   '<div style="font-size:.68rem;color:rgba(255,255,255,.55);">💨 <strong style="color:rgba(255,255,255,.9);">' + Math.round(c.wind_speed_10m) + ' km/h</strong></div>'
+        +   '<div style="font-size:.68rem;color:rgba(255,255,255,.55);">🌡️ Feels <strong style="color:rgba(255,255,255,.9);">' + Math.round(c.apparent_temperature) + '°C</strong></div>'
+        + '</div>';
+
+      // 7-day forecast for Narowal only
+      if (withForecast && data.daily) {
+        var fs = document.getElementById('ww-forecast-section');
+        var fd = document.getElementById('ww-7day');
+        if (fs && fd) {
+          var html = '';
+          for (var i = 0; i < 7 && i < data.daily.time.length; i++) {
+            var d = new Date(data.daily.time[i]);
+            html += '<div style="background:rgba(255,255,255,.1);border-radius:9px;padding:9px 4px;text-align:center;">'
+              + '<div style="font-size:.6rem;color:rgba(255,255,255,.55);font-weight:700;text-transform:uppercase;margin-bottom:3px;">' + (i===0?'Today':W_DAYS[d.getDay()]) + '</div>'
+              + '<div style="font-size:1.2rem;margin-bottom:3px;">' + wIcon(data.daily.weathercode[i]) + '</div>'
+              + '<div style="font-size:.78rem;font-weight:700;color:white;">' + Math.round(data.daily.temperature_2m_max[i]) + '°</div>'
+              + '<div style="font-size:.66rem;color:rgba(255,255,255,.45);">' + Math.round(data.daily.temperature_2m_min[i]) + '°</div>'
+            + '</div>';
+          }
+          fd.innerHTML = html;
+          fs.style.display = 'block';
+        }
+      }
+
+      var upd = document.getElementById('ww-updated');
+      if (upd) upd.textContent = 'Updated: ' + new Date().toLocaleTimeString('en-PK',{hour:'2-digit',minute:'2-digit'});
+    })
+    .catch(function(err){
+      el.innerHTML = '<div style="color:rgba(255,150,150,.8);font-size:.78rem;padding:8px;">⚠️ ' + name + ' weather unavailable</div>';
+    });
+}
+
+/* Load all 3 cities */
+wCard('city-narowal',    'Narowal',    'نارووال', 32.1025, 74.8752, true);
+wCard('city-shakargarh', 'Shakargarh', 'شکرگڑھ',  32.2670, 75.1600, false);
+wCard('city-zafarwal',   'Zafarwal',   'ظفروال',  32.3450, 74.9010, false);
+
+/* Refresh every 10 minutes */
+setInterval(function(){
+  wCard('city-narowal',    'Narowal',    'نارووال', 32.1025, 74.8752, true);
+  wCard('city-shakargarh', 'Shakargarh', 'شکرگڑھ',  32.2670, 75.1600, false);
+  wCard('city-zafarwal',   'Zafarwal',   'ظفروال',  32.3450, 74.9010, false);
+}, 600000);
+</script>
+</body>
+</html>?
 <html lang="en">
 <head>
   <meta name="google-site-verification" content="y3QRRg5ZV78wJuqbKBmZpSrQXlzl2xcjDndv4T2m0Wc" />
