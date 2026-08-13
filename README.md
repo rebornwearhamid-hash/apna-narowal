@@ -1,6 +1,6 @@
 # Apna Narowal – Local Directory Website
 
-**Live URL:** https://apnanarowal.pk  
+**Live URL:** https://apna-narowal.vercel.app  
 **GitHub Pages:** https://YOUR-USERNAME.github.io/apna-narowal/
 
 ## Pages Included (22 HTML files)
