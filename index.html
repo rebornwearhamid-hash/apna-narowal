@@ -966,120 +966,123 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:48px 20px 22px;
           <button class="btn btn-green" style="margin-top:18px;" onclick="resetForm()">Submit Another</button>
         </div>
         <div id="formBody">
-          <!-- PRICING TIERS -->
-          <div style="margin-bottom:20px;">
-            <div style="font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:12px;">Choose Your Plan</div>
-            <div class="pricing-grid">
-              <div class="price-tier" onclick="selectTier(this,'free')">
-                <div class="pt-name">Free</div>
-                <div class="pt-price">PKR 0<span>/mo</span></div>
-                <div class="pt-features">Basic listing<br>Name & phone<br>Address only</div>
-              </div>
-              <div class="price-tier recommended selected" onclick="selectTier(this,'standard')">
-                <div class="pt-name">Standard</div>
-                <div class="pt-price">PKR 500<span>/mo</span></div>
-                <div class="pt-features">Verified badge<br>WhatsApp button<br>Photos + reviews</div>
-              </div>
-              <div class="price-tier" onclick="selectTier(this,'featured')">
-                <div class="pt-name">Featured</div>
-                <div class="pt-price">PKR 1,500<span>/mo</span></div>
-                <div class="pt-features">⭐ Featured badge<br>Top of search<br>Priority support</div>
-              </div>
-            </div>
-            <input type="hidden" id="selectedTier" value="standard">
-          </div>
+          <form action="https://api.web3forms.com/submit" method="POST" id="submitListingForm">
+            <input type="hidden" name="access_key" value="ca962552-d5f8-4063-bd2a-28fd9201319d">
 
-          <div class="form-grid">
-            <div class="form-field full">
-              <label>Business Name <span class="req">*</span></label>
-              <input class="fi" id="fn" type="text" placeholder="e.g. Al Rehman Hospital Narowal">
-              <div class="ferr" id="err-fn">Business name is required.</div>
+            <!-- PRICING TIERS -->
+            <div style="margin-bottom:20px;">
+              <div style="font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:12px;">Choose Your Plan</div>
+              <div class="pricing-grid">
+                <div class="price-tier" onclick="selectTier(this,'free')">
+                  <div class="pt-name">Free</div>
+                  <div class="pt-price">PKR 0<span>/mo</span></div>
+                  <div class="pt-features">Basic listing<br>Name & phone<br>Address only</div>
+                </div>
+                <div class="price-tier recommended selected" onclick="selectTier(this,'standard')">
+                  <div class="pt-name">Standard</div>
+                  <div class="pt-price">PKR 500<span>/mo</span></div>
+                  <div class="pt-features">Verified badge<br>WhatsApp button<br>Photos + reviews</div>
+                </div>
+                <div class="price-tier" onclick="selectTier(this,'featured')">
+                  <div class="pt-name">Featured</div>
+                  <div class="pt-price">PKR 1,500<span>/mo</span></div>
+                  <div class="pt-features">⭐ Featured badge<br>Top of search<br>Priority support</div>
+                </div>
+              </div>
+              <input type="hidden" name="Plan" id="selectedTier" value="standard">
             </div>
-            <div class="form-field">
-              <label>Category <span class="req">*</span></label>
-              <select class="fs" id="fc">
-                <option value="">-- Select --</option>
-                <option>Hospital / Clinic</option>
-                <option>School / College</option>
-                <option>Restaurant / Café</option>
-                <option>Bank / ATM</option>
-                <option>Pharmacy</option>
-                <option>Government Office</option>
-                <option>Sports Shop</option>
-                <option>Clothing / Fashion</option>
-                <option>Hotel / Guest House</option>
-                <option>Lawyer / Advocate</option>
-                <option>Real Estate</option>
-                <option>Transport</option>
-                <option>Stationery</option>
-                <option>Crockery</option>
-                <option>Shopping Store</option>
-                <option>Auto Workshop</option>
-                <option>Motor Workshop</option>
-                <option>Sanitary Shop</option>
-                <option>Electronic Store</option>
-                <option>Mobile Shop</option>
-                <option>Furniture</option>
-                <option>Cosmetics & Skin Care</option>
-                <option>Tailor</option>
-                <option>Barber Shop</option>
-                <option>Laundry</option>
-                <option>Car Wash</option>
-                <option>Petrol Pump</option>
-                <option>Park</option>
-                <option>Ground</option>
-                <option>Travel Agency</option>
-                <option>Meat Shop</option>
-                <option>Other</option>
-              </select>
-              <div class="ferr" id="err-fc">Please select a category.</div>
-            </div>
-            <div class="form-field">
-              <label>Area <span class="req">*</span></label>
-              <select class="fs" id="fa">
-                <option value="">-- Select --</option>
-                <option>Narowal City</option>
-                <option>Shakargarh</option>
-                <option>Zafarwal</option>
-                <option>Other in Narowal District</option>
-              </select>
-              <div class="ferr" id="err-fa">Please select an area.</div>
-            </div>
-            <div class="form-field">
-              <label>Phone Number <span class="req">*</span></label>
-              <input class="fi" id="fp" type="tel" placeholder="0300-1234567">
-              <div class="ferr" id="err-fp">Valid phone number required.</div>
-            </div>
-            <div class="form-field">
-              <label>WhatsApp Number</label>
-              <input class="fi" id="fw" type="tel" placeholder="0300-1234567 (if different)">
-            </div>
-            <div class="form-field full">
-              <label>Full Address <span class="req">*</span></label>
-              <input class="fi" id="fad" type="text" placeholder="e.g. GT Road, Near Chowk, Narowal">
-              <div class="ferr" id="err-fad">Address is required.</div>
-            </div>
-            <div class="form-field full">
-              <label>Business Description <span class="req">*</span></label>
-              <textarea class="ft" id="fd" placeholder="Describe your business, services, specialities, opening hours… (min 30 characters)"></textarea>
-              <div class="ferr" id="err-fd">Min 30 characters required.</div>
-            </div>
-            <div class="form-field full">
-              <label>Google Maps Link <span style="color:var(--muted);font-weight:400;">(optional — helps customers find you)</span></label>
-              <input class="fi" id="fmap" type="url" placeholder="https://maps.google.com/...">
-            </div>
-            <div class="form-field">
-              <label>Your Name</label>
-              <input class="fi" id="fcon" type="text" placeholder="Contact person name">
-            </div>
-          </div>
 
-          <button type="button" class="submit-btn" id="submitBtn" onclick="handleSubmit()">
-            <span id="submitTxt">📋 Submit Listing</span>
-          </button>
+            <div class="form-grid">
+              <div class="form-field full">
+                <label>Business Name <span class="req">*</span></label>
+                <input class="fi" name="Business Name" id="fn" type="text" placeholder="e.g. Al Rehman Hospital Narowal" required>
+                <div class="ferr" id="err-fn">Business name is required.</div>
+              </div>
+              <div class="form-field">
+                <label>Category <span class="req">*</span></label>
+                <select class="fs" name="Category" id="fc" required>
+                  <option value="">-- Select --</option>
+                  <option>Hospital / Clinic</option>
+                  <option>School / College</option>
+                  <option>Restaurant / Café</option>
+                  <option>Bank / ATM</option>
+                  <option>Pharmacy</option>
+                  <option>Government Office</option>
+                  <option>Sports Shop</option>
+                  <option>Clothing / Fashion</option>
+                  <option>Hotel / Guest House</option>
+                  <option>Lawyer / Advocate</option>
+                  <option>Real Estate</option>
+                  <option>Transport</option>
+                  <option>Stationery</option>
+                  <option>Crockery</option>
+                  <option>Shopping Store</option>
+                  <option>Auto Workshop</option>
+                  <option>Motor Workshop</option>
+                  <option>Sanitary Shop</option>
+                  <option>Electronic Store</option>
+                  <option>Mobile Shop</option>
+                  <option>Furniture</option>
+                  <option>Cosmetics & Skin Care</option>
+                  <option>Tailor</option>
+                  <option>Barber Shop</option>
+                  <option>Laundry</option>
+                  <option>Car Wash</option>
+                  <option>Petrol Pump</option>
+                  <option>Park</option>
+                  <option>Ground</option>
+                  <option>Travel Agency</option>
+                  <option>Meat Shop</option>
+                  <option>Other</option>
+                </select>
+                <div class="ferr" id="err-fc">Please select a category.</div>
+              </div>
+              <div class="form-field">
+                <label>Area <span class="req">*</span></label>
+                <select class="fs" name="Area" id="fa" required>
+                  <option value="">-- Select --</option>
+                  <option>Narowal City</option>
+                  <option>Shakargarh</option>
+                  <option>Zafarwal</option>
+                  <option>Other in Narowal District</option>
+                </select>
+                <div class="ferr" id="err-fa">Please select an area.</div>
+              </div>
+              <div class="form-field">
+                <label>Phone Number <span class="req">*</span></label>
+                <input class="fi" name="Phone Number" id="fp" type="tel" placeholder="0300-1234567" required>
+                <div class="ferr" id="err-fp">Valid phone number required.</div>
+              </div>
+              <div class="form-field">
+                <label>WhatsApp Number</label>
+                <input class="fi" name="WhatsApp Number" id="fw" type="tel" placeholder="0300-1234567 (if different)">
+              </div>
+              <div class="form-field full">
+                <label>Full Address <span class="req">*</span></label>
+                <input class="fi" name="Full Address" id="fad" type="text" placeholder="e.g. GT Road, Near Chowk, Narowal" required>
+                <div class="ferr" id="err-fad">Address is required.</div>
+              </div>
+              <div class="form-field full">
+                <label>Business Description <span class="req">*</span></label>
+                <textarea class="ft" name="Business Description" id="fd" placeholder="Describe your business, services, specialities, opening hours… (min 30 characters)" required></textarea>
+                <div class="ferr" id="err-fd">Min 30 characters required.</div>
+              </div>
+              <div class="form-field full">
+                <label>Google Maps Link <span style="color:var(--muted);font-weight:400;">(optional — helps customers find you)</span></label>
+                <input class="fi" name="Google Maps Link" id="fmap" type="url" placeholder="https://maps.google.com/...">
+              </div>
+              <div class="form-field">
+                <label>Your Name</label>
+                <input class="fi" name="Your Name" id="fcon" type="text" placeholder="Contact person name">
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span id="submitTxt">📋 Submit Listing</span>
+            </button>
+          </form>
           <p style="font-size:.7rem;color:var(--muted);text-align:center;margin-top:10px;">Free listings reviewed within 48 hours. Paid listings go live within 24 hours after payment confirmation via WhatsApp.</p>
         </div>
-      </div>
 
       <!-- Google Form Embed Option -->
       <div style="text-align:center;margin-top:20px;padding:16px;background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);">
